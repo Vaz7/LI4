@@ -1,0 +1,146 @@
+-- Create the Li4 schema if it doesn't exist
+IF (SCHEMA_ID('Li4') IS NULL) 
+BEGIN
+    EXEC ('CREATE SCHEMA [Li4] AUTHORIZATION [dbo]')
+END
+
+-- Drop foreign key constraints before dropping the Utilizador table
+IF OBJECT_ID('Li4.fk_Utilizador_Morada', 'F') IS NOT NULL
+    ALTER TABLE Li4.Utilizador DROP CONSTRAINT fk_Utilizador_Morada;
+
+-- Drop foreign key constraints before dropping the Leilao table
+IF OBJECT_ID('Li4.fk_Leilao_Utilizador1', 'F') IS NOT NULL
+    ALTER TABLE Li4.leilao DROP CONSTRAINT fk_Leilao_Utilizador1;
+
+-- Drop foreign key constraints before dropping the utilizador_leilao table
+IF OBJECT_ID('Li4.fk_utilizador_leilao_Utilizador1', 'F') IS NOT NULL
+    ALTER TABLE Li4.utilizador_leilao DROP CONSTRAINT fk_utilizador_leilao_Utilizador1;
+
+IF OBJECT_ID('Li4.fk_utilizador_leilao_Leilao1', 'F') IS NOT NULL
+    ALTER TABLE Li4.utilizador_leilao DROP CONSTRAINT fk_utilizador_leilao_Leilao1;
+
+IF OBJECT_ID('Li4.fk_utilizador_leilao_licitacao1', 'F') IS NOT NULL
+    ALTER TABLE Li4.utilizador_leilao DROP CONSTRAINT fk_utilizador_leilao_licitacao1;
+
+-- Drop foreign key constraints before dropping the Quadro table
+IF OBJECT_ID('Li4.fk_Quadro_Leilao1', 'F') IS NOT NULL
+    ALTER TABLE Li4.Quadro DROP CONSTRAINT fk_Quadro_Leilao1;
+
+-- Drop the tables
+
+-- Table utilizador_leilao
+IF OBJECT_ID('Li4.utilizador_leilao', 'U') IS NOT NULL
+    DROP TABLE Li4.utilizador_leilao;
+
+-- Table Quadro
+IF OBJECT_ID('Li4.Quadro', 'U') IS NOT NULL
+    DROP TABLE Li4.Quadro;
+
+-- Table licitacao
+IF OBJECT_ID('Li4.licitacao', 'U') IS NOT NULL
+    DROP TABLE Li4.licitacao;
+
+-- Table Leilao
+IF OBJECT_ID('Li4.leilao', 'U') IS NOT NULL
+    DROP TABLE Li4.leilao;
+
+-- Table Utilizador
+IF OBJECT_ID('Li4.Utilizador', 'U') IS NOT NULL
+    DROP TABLE Li4.Utilizador;
+
+-- Table Morada
+IF OBJECT_ID('Li4.Morada', 'U') IS NOT NULL
+    DROP TABLE Li4.Morada;
+
+
+-- Table Morada
+CREATE TABLE Li4.Morada (
+    idMorada INT NOT NULL,
+    rua VARCHAR(100) NOT NULL,
+    cidade VARCHAR(50) NOT NULL,
+    cod_postal VARCHAR(10) NOT NULL,
+    pais VARCHAR(45) NOT NULL,
+    PRIMARY KEY (idMorada)
+);
+
+-- Table Utilizador
+CREATE TABLE Li4.Utilizador (
+    email VARCHAR(100) NOT NULL,
+    nome VARCHAR(45) NOT NULL,
+    data_nascimento DATETIME NOT NULL,
+    NIF VARCHAR(9) NOT NULL,
+    Morada_idMorada INT NOT NULL,
+    PRIMARY KEY (email),
+    CONSTRAINT fk_Utilizador_Morada
+        FOREIGN KEY (Morada_idMorada)
+        REFERENCES Li4.Morada (idMorada)
+        ON DELETE NO ACTION
+        ON UPDATE NO ACTION
+);
+
+-- Table Leilao
+CREATE TABLE Li4.leilao (
+    idLeilao INT NOT NULL,
+    nome VARCHAR(150) NOT NULL,
+    data_inicio DATETIME NOT NULL,
+    data_fim DATETIME NOT NULL,
+    estado VARCHAR(45) NOT NULL,
+    valor_base DECIMAL(7,2) NOT NULL,
+    Utilizador_email VARCHAR(100) NOT NULL,
+    PRIMARY KEY (idLeilao),
+    CONSTRAINT fk_Leilao_Utilizador1
+        FOREIGN KEY (Utilizador_email)
+        REFERENCES Li4.Utilizador (email)
+        ON DELETE NO ACTION
+        ON UPDATE NO ACTION
+);
+
+-- Table licitacao
+CREATE TABLE Li4.licitacao (
+    idlicitacao INT NOT NULL,
+    data DATETIME NOT NULL,
+    valor DECIMAL(7,2) NOT NULL,
+    PRIMARY KEY (idlicitacao)
+);
+
+-- Table utilizador_leilao
+CREATE TABLE Li4.utilizador_leilao (
+    Utilizador_email VARCHAR(100) NOT NULL,
+    Leilao_idLeilao INT NOT NULL,
+    licitacao_idlicitacao INT NOT NULL,
+    PRIMARY KEY (Utilizador_email, Leilao_idLeilao),
+    CONSTRAINT fk_utilizador_leilao_Utilizador1
+        FOREIGN KEY (Utilizador_email)
+        REFERENCES Li4.Utilizador (email)
+        ON DELETE NO ACTION
+        ON UPDATE NO ACTION,
+    CONSTRAINT fk_utilizador_leilao_Leilao1
+        FOREIGN KEY (Leilao_idLeilao)
+        REFERENCES Li4.Leilao (idLeilao)
+        ON DELETE NO ACTION
+        ON UPDATE NO ACTION,
+    CONSTRAINT fk_utilizador_leilao_licitacao1
+        FOREIGN KEY (licitacao_idlicitacao)
+        REFERENCES Li4.licitacao (idlicitacao)
+        ON DELETE NO ACTION
+        ON UPDATE NO ACTION
+);
+
+-- Table Quadro
+CREATE TABLE Li4.Quadro (
+    idQuadro INT NOT NULL,
+    Título VARCHAR(100) NOT NULL,
+    Ano VARCHAR(4) NOT NULL,
+    Altura DECIMAL(3,2) NOT NULL,
+    Largura DECIMAL(3,2) NOT NULL,
+    Descricao NVARCHAR(1000) NOT NULL,
+    Moldura TINYINT NOT NULL,
+    Autor VARCHAR(100) NOT NULL,
+    Leilao_idLeilao INT NOT NULL,
+    PRIMARY KEY (idQuadro),
+    CONSTRAINT fk_Quadro_Leilao1
+        FOREIGN KEY (Leilao_idLeilao)
+        REFERENCES Li4.Leilao (idLeilao)
+        ON DELETE NO ACTION
+        ON UPDATE NO ACTION
+);
