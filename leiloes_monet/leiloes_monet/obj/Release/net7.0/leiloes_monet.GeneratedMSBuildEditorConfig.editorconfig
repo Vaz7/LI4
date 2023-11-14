@@ -9,29 +9,29 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = leiloes_monet
 build_property.RootNamespace = leiloes_monet
-build_property.ProjectDir = C:\Users\henri\Desktop\leiloes_monet\leiloes_monet\
+build_property.ProjectDir = C:\Users\henri\Desktop\LI4\leiloes_monet\leiloes_monet\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\henri\Desktop\leiloes_monet\leiloes_monet
+build_property.MSBuildProjectDirectory = C:\Users\henri\Desktop\LI4\leiloes_monet\leiloes_monet
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/henri/Desktop/leiloes_monet/leiloes_monet/App.razor]
+[C:/Users/henri/Desktop/LI4/leiloes_monet/leiloes_monet/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/henri/Desktop/leiloes_monet/leiloes_monet/MainLayout.razor]
+[C:/Users/henri/Desktop/LI4/leiloes_monet/leiloes_monet/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = TWFpbkxheW91dC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/henri/Desktop/leiloes_monet/leiloes_monet/Pages/Component.razor]
+[C:/Users/henri/Desktop/LI4/leiloes_monet/leiloes_monet/Pages/Component.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcG9uZW50LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/henri/Desktop/leiloes_monet/leiloes_monet/Pages/Index.razor]
+[C:/Users/henri/Desktop/LI4/leiloes_monet/leiloes_monet/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/henri/Desktop/leiloes_monet/leiloes_monet/_Imports.razor]
+[C:/Users/henri/Desktop/LI4/leiloes_monet/leiloes_monet/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 

@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\leiloes_monet",
+    "\\leiloes_monet\\Pages",
+    "\\leiloes_monet\\wwwroot"
   ],
-  "SelectedNode": "\\leiloes_monet.sln",
+  "SelectedNode": "\\leiloes_monet\\Pages\\Index.razor",
   "PreviewInSolutionExplorer": false
 }

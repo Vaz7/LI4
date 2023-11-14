@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1/STHQcNsU4QZSI5XXecVnHO+P23euokZY/lxMJbWPH66GFriEwfyMuwDBkQJy5XxbhDJ/FMlw0x6QkBjscXqg==",
+  "dgSpecHash": "bf/874lfRZnocgkSi9tpLaiw2OXIpoYMqlIPyahjALA+T8pgYKcbpCA2gdvgi0MC0EJDL9Q2o207n1mmig4gUg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\henri\\Desktop\\leiloes_monet\\leiloes_monet\\leiloes_monet.csproj",
+  "projectFilePath": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\leiloes_monet.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\henri\\.nuget\\packages\\microsoft.aspnetcore.authorization\\7.0.13\\microsoft.aspnetcore.authorization.7.0.13.nupkg.sha512",
     "C:\\Users\\henri\\.nuget\\packages\\microsoft.aspnetcore.components\\7.0.13\\microsoft.aspnetcore.components.7.0.13.nupkg.sha512",

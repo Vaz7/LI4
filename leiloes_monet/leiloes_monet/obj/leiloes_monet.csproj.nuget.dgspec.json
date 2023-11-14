@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\henri\\Desktop\\leiloes_monet\\leiloes_monet\\leiloes_monet.csproj": {}
+    "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\leiloes_monet.csproj": {}
   },
   "projects": {
-    "C:\\Users\\henri\\Desktop\\leiloes_monet\\leiloes_monet\\leiloes_monet.csproj": {
+    "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\leiloes_monet.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\henri\\Desktop\\leiloes_monet\\leiloes_monet\\leiloes_monet.csproj",
+        "projectUniqueName": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\leiloes_monet.csproj",
         "projectName": "leiloes_monet",
-        "projectPath": "C:\\Users\\henri\\Desktop\\leiloes_monet\\leiloes_monet\\leiloes_monet.csproj",
+        "projectPath": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\leiloes_monet.csproj",
         "packagesPath": "C:\\Users\\henri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\henri\\Desktop\\leiloes_monet\\leiloes_monet\\obj\\",
+        "outputPath": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
           "C:\\Users\\henri\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
