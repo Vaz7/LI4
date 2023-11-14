@@ -13,6 +13,14 @@
       "PackagePath": "staticwebassets\\css\\app.css"
     },
     {
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\imagens\\bar.jpg",
+      "PackagePath": "staticwebassets\\imagens\\bar.jpg"
+    },
+    {
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\imagens\\grito.jpg",
+      "PackagePath": "staticwebassets\\imagens\\grito.jpg"
+    },
+    {
       "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },

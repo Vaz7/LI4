@@ -1,7 +1,6 @@
 ﻿@page "/"
 
-<style>
-    /* Add your styles here */
+<style>/*Buttons*/
     .button-container {
         position: absolute;
         top: 10px;
@@ -20,11 +19,83 @@
         border: none;
         border-radius: 5px;
     }
+
+        .website-title {
+        position: absolute;
+        top: 0px;
+        left: 15px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #7A007C; /* Adjust the color as needed */
+    }
+
+    .quem-somos-button {
+        background-color: #ffffff !important; /* Change this color to your desired background color */
+        color: #000000 !important;
+    }
+
+
 </style>
 
+
 <div class="button-container">
+    <button @onclick="GoToLoginPage" class="quem-somos-button">Quem somos</button>
     <button @onclick="GoToLoginPage">Sign In</button>
     <button @onclick="GoToLoginPage">Sign Up</button>
+</div>
+
+<style>/*Images and header style*/
+    .header-text {
+        text-align: center;
+        font-size: 40px; /* Adjust this value to set the font size */
+        margin-top: 250px; /* Adjust this value to set the top margin */
+    }
+
+    .image-container {
+        position: fixed;
+        top: 450px; /* Adjust this value to set the exact top position */
+        left: 20%; /* Center the container horizontally */
+        transform: translateX(-20%); /* Center the container horizontally */
+    }
+
+        .image-container img {
+            max-width: 50%; /* Adjust this value to scale the image */
+            height: auto;
+        }
+
+    .second-image-container {
+        position: fixed;
+        top: 450px; /* Adjust this value to set the exact top position */
+        right: 20%; /* Adjust this value to set the left position of the second image */
+        transform: translateX(20%); /* Center the container horizontally */
+    }
+
+        .second-image-container img {
+            max-width: 100%; /* Adjust this value to scale the second image */
+            height: auto;
+        }
+</style>
+
+
+<div class="website-title">
+    <p>
+        Leilões Monet
+    </p>
+</div>
+
+<div class="image-container">
+    <img src="/imagens/grito.jpg" alt="Your Image Alt Text">
+</div>
+
+
+<div class="second-image-container">
+    <img src="/imagens/bar.jpg" alt="Your Image Alt Text">
+</div>
+
+<div class="header-text">
+    <p>
+        Somos colecionadores, apreciadores e negociantes de obras de arte preciosas.
+    </p>
 </div>
 
 @code {

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "IvioYYxaaObdg/9yEBUnrXs91oHpWZosD8abs0AzN0Y=",
+  "Hash": "CDShaT4q/DFJstiKdK0cIOw/h16Rd3Udl9K8tnDW8+o=",
   "Source": "leiloes_monet",
   "BasePath": "/",
   "Mode": "Root",
@@ -6883,6 +6883,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\app.css"
+    },
+    {
+      "Identity": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\imagens\\bar.jpg",
+      "SourceId": "leiloes_monet",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "imagens/bar.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagens\\bar.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\imagens\\grito.jpg",
+      "SourceId": "leiloes_monet",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "imagens/grito.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagens\\grito.jpg"
     },
     {
       "Identity": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\index.html",
