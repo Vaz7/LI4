@@ -1,0 +1,34 @@
+﻿@page "/"
+
+<div>
+    <label for="userName">Enter your name:</label>
+    <input type="text" id="userName" @bind="userName" />
+    <button @onclick="AddUser">Add User</button>
+    @if (!string.IsNullOrEmpty(message))
+    {
+        <p>@message</p>
+    }
+</div>
+
+@code {
+    private List<Utilizador> utilizadores;
+    private string userName;
+    private string password;
+    private string message = "";
+
+
+    private void AddUser()
+    {
+        var newUser = new Utilizador
+            {
+                nome = userName
+                // Add other properties as needed
+            };
+
+        utilizadores.Add(newUser);
+
+        // Set the message to be displayed
+        message = "User '{newUser.nome}' added successfully!";
+        
+    }
+}

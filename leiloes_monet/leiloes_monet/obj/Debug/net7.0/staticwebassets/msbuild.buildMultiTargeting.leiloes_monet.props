@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\leiloes_monet.props" />
+</Project>
