@@ -20,13 +20,20 @@
         border-radius: 5px;
     }
 
-        .website-title {
+    .website-title {
         position: absolute;
-        top: 0px;
+        top: 10px;
         left: 15px;
         font-size: 20px;
         font-weight: bold;
-        color: #7A007C; /* Adjust the color as needed */
+        color: #7A007C;
+        cursor: pointer; /* Add cursor pointer on hover */
+        background: none;
+        border: none;
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        font-family: inherit;
     }
 
     .quem-somos-button {
@@ -37,11 +44,12 @@
 
 </style>
 
+<button @onclick="GoToHomePage" class="website-title">Leilões Monet</button>
 
 <div class="button-container">
-    <button @onclick="GoToLoginPage" class="quem-somos-button">Quem somos</button>
+    <button @onclick="GoToQuemSomos" class="quem-somos-button">Quem somos</button>
     <button @onclick="GoToLoginPage">Sign In</button>
-    <button @onclick="GoToLoginPage">Sign Up</button>
+    <button @onclick="GoToSignUpPage">Sign Up</button>
 </div>
 
 <style>/*Images and header style*/
@@ -52,51 +60,66 @@
     }
 
     .image-container {
-        position: fixed;
-        top: 450px; /* Adjust this value to set the exact top position */
-        left: 20%; /* Center the container horizontally */
-        transform: translateX(-20%); /* Center the container horizontally */
+        display: flex; /* Display children elements (images) in a row */
+        justify-content: center; /* Center the images horizontally */
+        align-items: center; /* Center the images vertically */
+        margin-top: 350px; /* Adjust the top margin as needed */
     }
 
         .image-container img {
-            max-width: 50%; /* Adjust this value to scale the image */
             height: auto;
+            margin: 0 10px; /* Adjust the margin between images */
         }
 
-    .second-image-container {
-        position: fixed;
-        top: 450px; /* Adjust this value to set the exact top position */
-        right: 20%; /* Adjust this value to set the left position of the second image */
-        transform: translateX(20%); /* Center the container horizontally */
+            .image-container img:first-child {
+                max-width: 100%; /* Adjust the max-width for the first image */
+            }
+
+            .image-container img:last-child {
+                max-width: 100%; /* Adjust the max-width for the second image */
+            }
+
+    .resume-text {
+        text-align: center;
+        font-size: 40px; /* Adjust this value to set the font size */
+        margin-top: 400px; /* Adjust this value to set the top margin */
+        margin-left: auto;
+        margin-right: auto;
+        display: table;
     }
-
-        .second-image-container img {
-            max-width: 100%; /* Adjust this value to scale the second image */
-            height: auto;
-        }
 </style>
 
-
-<div class="website-title">
-    <p>
-        Leilões Monet
-    </p>
-</div>
-
-<div class="image-container">
-    <img src="/imagens/grito.jpg" alt="Your Image Alt Text">
-</div>
-
-
-<div class="second-image-container">
-    <img src="/imagens/bar.jpg" alt="Your Image Alt Text">
-</div>
 
 <div class="header-text">
     <p>
         Somos colecionadores, apreciadores e negociantes de obras de arte preciosas.
     </p>
 </div>
+
+<div class="image-container">
+    <img src="/imagens/grito.jpg">
+    <img src="/imagens/bar.jpg">
+</div>
+
+
+<div class="resume-text">
+
+    <p>Na Leilões Monet, acreditamos no poder da arte para inspirar, cativar e transformar vidas.</p><br>
+
+    <p>Acreditamos que a arte transcende barreiras, unindo pessoas de todas as culturas e lugares, criando uma linguagem universal.</p><br>
+
+
+    <p>O nosso compromisso é apoiar artistas, oferecendo uma plataforma para exibirem o seu talento, obter reconhecimento e receber um justo valor pelo seu trabalho.</p><br>
+
+    <p>Qualidade e Autenticidade: Comprometemo-nos com altos padrões de qualidade e autenticidade em todas as obras de arte que leiloamos.</p><br>
+
+    <p>Acreditamos que a arte deve ser acessível a todos, oferecendo uma variedade de obras para diferentes gostos e orçamentos.</p><br>
+    
+</div>
+
+
+
+
 
 @code {
     // Inject NavigationManager
@@ -107,5 +130,19 @@
     {
         // Use NavigationManager to navigate to the "/login" page
         NavigationManager.NavigateTo("/login");
+    }
+    private void GoToSignUpPage()
+    {
+        // Use NavigationManager to navigate to the "/signup" page
+        NavigationManager.NavigateTo("/signup");
+    }
+    private void GoToQuemSomos()
+    {
+        // Use NavigationManager to navigate to the "/quemsomos" page
+        NavigationManager.NavigateTo("/quemSomos");
+    }
+    private void GoToHomePage()
+    {
+        NavigationManager.NavigateTo("/");
     }
 }
