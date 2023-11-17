@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "leiloes_monet", "leiloes_monet\leiloes_monet.csproj", "{B1BB61BF-8EEB-43A0-B737-6011BAFC08EE}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Itens de Solução", "Itens de Solução", "{F7C29E12-39CA-48D4-A9B7-F83F779AFD13}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Leiloes_Monet", "Leiloes_Monet\Leiloes_Monet.csproj", "{43DDAE37-99B6-4BC0-A06F-0DD799516276}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B1BB61BF-8EEB-43A0-B737-6011BAFC08EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B1BB61BF-8EEB-43A0-B737-6011BAFC08EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B1BB61BF-8EEB-43A0-B737-6011BAFC08EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B1BB61BF-8EEB-43A0-B737-6011BAFC08EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43DDAE37-99B6-4BC0-A06F-0DD799516276}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43DDAE37-99B6-4BC0-A06F-0DD799516276}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43DDAE37-99B6-4BC0-A06F-0DD799516276}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43DDAE37-99B6-4BC0-A06F-0DD799516276}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {4674FC25-32FC-45F3-9F58-0B4DF431F9FE}
+		SolutionGuid = {3856EAEF-46E3-4B6C-BA36-748DFCA1056A}
 	EndGlobalSection
 EndGlobal

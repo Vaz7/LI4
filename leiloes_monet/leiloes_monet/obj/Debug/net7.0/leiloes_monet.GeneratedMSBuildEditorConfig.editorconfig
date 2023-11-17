@@ -1,45 +1,49 @@
 is_global = true
 build_property.TargetFramework = net7.0
 build_property.TargetPlatformMinVersion = 
-build_property.UsingMicrosoftNETSdkWeb = 
+build_property.UsingMicrosoftNETSdkWeb = true
 build_property.ProjectTypeGuids = 
-build_property.InvariantGlobalization = false
+build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
-build_property._SupportedPlatformList = browser
-build_property.RootNamespace = leiloes_monet
-build_property.RootNamespace = leiloes_monet
-build_property.ProjectDir = C:\Users\henri\Desktop\LI4\leiloes_monet\leiloes_monet\
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Leiloes_Monet
+build_property.RootNamespace = Leiloes_Monet
+build_property.ProjectDir = C:\Users\henri\Desktop\LI4\Leiloes_Monet\Leiloes_Monet\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\henri\Desktop\LI4\leiloes_monet\leiloes_monet
+build_property.MSBuildProjectDirectory = C:\Users\henri\Desktop\LI4\Leiloes_Monet\Leiloes_Monet
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/henri/Desktop/LI4/leiloes_monet/leiloes_monet/App.razor]
+[C:/Users/henri/Desktop/LI4/Leiloes_Monet/Leiloes_Monet/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/henri/Desktop/LI4/leiloes_monet/leiloes_monet/MainLayout.razor]
+[C:/Users/henri/Desktop/LI4/Leiloes_Monet/Leiloes_Monet/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = TWFpbkxheW91dC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/henri/Desktop/LI4/leiloes_monet/leiloes_monet/Pages/Index.razor]
+[C:/Users/henri/Desktop/LI4/Leiloes_Monet/Leiloes_Monet/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/henri/Desktop/LI4/leiloes_monet/leiloes_monet/Pages/Login.razor]
+[C:/Users/henri/Desktop/LI4/Leiloes_Monet/Leiloes_Monet/Pages/Login.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/henri/Desktop/LI4/leiloes_monet/leiloes_monet/Pages/QuemSomos.razor]
+[C:/Users/henri/Desktop/LI4/Leiloes_Monet/Leiloes_Monet/Pages/QuemSomos.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUXVlbVNvbW9zLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/henri/Desktop/LI4/leiloes_monet/leiloes_monet/Pages/SignUp.razor]
+[C:/Users/henri/Desktop/LI4/Leiloes_Monet/Leiloes_Monet/Pages/SignUp.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2lnblVwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/henri/Desktop/LI4/leiloes_monet/leiloes_monet/_Imports.razor]
+[C:/Users/henri/Desktop/LI4/Leiloes_Monet/Leiloes_Monet/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/henri/Desktop/LI4/Leiloes_Monet/Leiloes_Monet/Pages/_Host.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

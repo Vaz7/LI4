@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("leiloes_monet")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Leiloes_Monet")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
-[assembly: System.Reflection.AssemblyProductAttribute("leiloes_monet")]
-[assembly: System.Reflection.AssemblyTitleAttribute("leiloes_monet")]
+[assembly: System.Reflection.AssemblyProductAttribute("Leiloes_Monet")]
+[assembly: System.Reflection.AssemblyTitleAttribute("Leiloes_Monet")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Gerado pela classe WriteCodeFragment do MSBuild.
