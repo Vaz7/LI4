@@ -69,6 +69,7 @@ CREATE TABLE Li4.Utilizador (
     nome VARCHAR(45) NOT NULL,
     data_nascimento DATETIME NOT NULL,
     NIF VARCHAR(9) NOT NULL,
+	password VARCHAR(40),
     Morada_idMorada INT NOT NULL,
     PRIMARY KEY (email),
     CONSTRAINT fk_Utilizador_Morada

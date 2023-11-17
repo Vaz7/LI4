@@ -6,11 +6,11 @@ VALUES
     (3, '789 Pine St', 'City3', '13579', 'Country3');
 
 -- Populating Utilizador table
-INSERT INTO Li4.Utilizador (email, nome, data_nascimento, NIF, Morada_idMorada)
+INSERT INTO Li4.Utilizador (email, nome, data_nascimento, NIF,password, Morada_idMorada)
 VALUES
-    ('user1@example.com', 'User 1', '1990-01-01', '123456789', 1),
-    ('user2@example.com', 'User 2', '1985-05-15', '987654321', 2),
-    ('user3@example.com', 'User 3', '2000-10-30', '111223344', 3);
+    ('user1@example.com', 'User 1', '1990-01-01', '123456789', 'cebola',1),
+    ('user2@example.com', 'User 2', '1985-05-15', '987654321','cebola' ,2),
+    ('user3@example.com', 'User 3', '2000-10-30', '111223344','cebola' ,3);
 
 -- Populating Leilao table
 INSERT INTO Li4.leilao (idLeilao, nome, data_inicio, data_fim, estado, valor_base, Utilizador_email)

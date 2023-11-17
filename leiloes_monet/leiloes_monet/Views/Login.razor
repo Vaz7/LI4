@@ -19,15 +19,11 @@
 
     private void AddUser()
     {
-        var newUser = new Utilizador
-            {
-                nome = userName
-                // Add other properties as needed
-            };
+        Utilizador user = new Utilizador(userName);
 
-        utilizadores.Add(newUser);
+        utilizadores.Add(user);
 
         // Set the message to be displayed
-        message = $"User '{newUser.nome}' added successfully!";
+        message = $"User '{user.nome}' added successfully!";
     }
 }
