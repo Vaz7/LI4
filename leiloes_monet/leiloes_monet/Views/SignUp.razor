@@ -1,5 +1,6 @@
 ﻿@page "/signup"
 @using Microsoft.JSInterop
+@using leiloes_monet.DAL;
 @using leiloes_monet.Pages;
 
 <style>
@@ -251,7 +252,6 @@
 
 
 @code {
-    private List<Utilizador> utilizadores = new List<Utilizador>();
     private string eMail = null;
     private string userName = null;
     private string date = null;
@@ -267,9 +267,8 @@
     {
         if (AreAllFieldsFilled())
         {
-            var newUser = new Utilizador(userName, eMail, password);
-
-            utilizadores.Add(newUser);
+            UserDAL test = new UserDAL();
+            test.addUser(userName,eMail,password);
            
             return true;
         }

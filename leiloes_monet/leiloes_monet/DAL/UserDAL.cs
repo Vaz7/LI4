@@ -35,5 +35,27 @@ namespace leiloes_monet.DAL
 
             return users;
         }
+
+        public void addUser(string username, string email, string password)
+        {
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                string query = @"INSERT INTO [Li4].[Utilizador]
+               ([username]
+               ,[email]
+               ,[password])
+             VALUES
+                ('" + username + "','" + email + "','" + password + "');";
+                con.Open();
+                SqlCommand cmd = new SqlCommand(query, con);
+
+                cmd.ExecuteNonQuery();
+
+                con.Close();
+
+            }
+        }
     }
+
+    
 }
