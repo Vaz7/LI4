@@ -131,7 +131,7 @@
     /* Hide the placeholder texts (a) */
 
     ::placeholder {
-        color: transparent;
+        color: #808080; /* Set a color that is visible but not too bright */
     }
 
     .label {
@@ -140,7 +140,7 @@
         left: 15px;
         padding: 0 4px;
         background-color: white;
-        color: #DADCE0;
+        color: #808080; /* Set the label color to a subtle gray */
         font-size: 16px;
         transition: 0.5s;
         z-index: 0;
@@ -189,50 +189,50 @@
 
 <div class="signupFrm">
     <form class="form" @onsubmit="SignUpAndNavigate">
-        <h1 class="title">Sign up</h1>
+        <h1 class="title">Sign Up</h1>
 
         <div class="inputContainer">
-            <input type="text" class="input" placeholder="a" @bind="eMail">
+            <input type="text" class="input" placeholder="" @bind="eMail">
             <label class="label">Email</label>
         </div>
 
         <div class="inputContainer">
-            <input type="text" class="input" placeholder="a" @bind="userName">
+            <input type="text" class="input" placeholder="" @bind="userName">
             <label class="label">Username</label>
         </div>
 
         <div class="inputContainer">
-            <input type="text" class="input" placeholder="a" @bind="date">
-            <label class="label">birthday date</label>
+            <input type="date" class="input" placeholder="" @bind="date">
+            <label class="label">Birthday Date</label>
         </div>
 
         <div class="inputContainer">
-            <input type="text" class="input" placeholder="a" @bind="nif">
-            <label class="label">nif</label>
+            <input type="text" class="input" placeholder="" @bind="nif">
+            <label class="label">NIF</label>
         </div>
 
         <div class="inputContainer">
-            <input type="text" class="input" placeholder="a" @bind="city">
+            <input type="text" class="input" placeholder="" @bind="city">
             <label class="label">City</label>
         </div>
 
         <div class="inputContainer">
-            <input type="text" class="input" placeholder="a" @bind="postCode">
-            <label class="label">Post code</label>
+            <input type="text" class="input" placeholder="" @bind="postCode">
+            <label class="label">Post Code</label>
         </div>
 
         <div class="inputContainer">
-            <input type="text" class="input" placeholder="a" @bind="country">
+            <input type="text" class="input" placeholder="" @bind="country">
             <label class="label">Country</label>
         </div>
 
         <div class="inputContainer">
-            <input type="text" class="input" placeholder="a" @bind="street">
+            <input type="text" class="input" placeholder="" @bind="street">
             <label class="label">Street</label>
         </div>
 
         <div class="inputContainer">
-            <input type="password" class="input" placeholder="a" @bind="password">
+            <input type="password" class="input" placeholder="" @bind="password">
             <label class="label">Password</label>
         </div>
 
@@ -254,7 +254,7 @@
 @code {
     private string eMail = null;
     private string userName = null;
-    private string date = null;
+    private DateTime? date = null;
     private string password = null;
     private string nif = null;
     private string city = null;
@@ -263,33 +263,100 @@
     private string street = null;
     private string errorMessage = null;
 
+    private bool isEmailTaken = false;
+    private bool isNIFTaken = false;
+
     private bool AddUser()
     {
-        if (AreAllFieldsFilled())
+        int res = AreAllFieldsFilled();
+        if (res == 0)
         {
             UserDAL test = new UserDAL();
-            test.addUser(userName,eMail,password);
-           
+            test.addUser(eMail,userName,date,nif,password,street,city,postCode,country);
+
             return true;
         }
-        else
+        else if (res == 3)
         {
             errorMessage = "Please fill in all the fields.";
             return false;
         }
+
+        else if (res == 1){
+            errorMessage = "Email is already taken.";
+            return false;
+        }
+        else if (res == 4)
+        {
+            errorMessage = "Birth Date is invalid!";
+            return false;
+        }
+        else
+        {
+            errorMessage = "NIF is already taken.";
+            return false;
+        }
     }
 
-    private bool AreAllFieldsFilled()
+    private bool IsEmailTaken()
     {
-        return !string.IsNullOrWhiteSpace(eMail)
-            && !string.IsNullOrWhiteSpace(userName)
-            && !string.IsNullOrWhiteSpace(date)
-            && !string.IsNullOrWhiteSpace(password)
-            && !string.IsNullOrWhiteSpace(nif)
-            && !string.IsNullOrWhiteSpace(street)
-            && !string.IsNullOrWhiteSpace(city)
-            && !string.IsNullOrWhiteSpace(postCode)
-            && !string.IsNullOrWhiteSpace(country);
+        UserDAL test = new UserDAL();
+        return test.isEmailTaken(eMail);
+    }
+
+    private bool IsNIFTaken()
+    {
+        UserDAL test = new UserDAL();
+        return test.isNIFTaken(nif);
+    }
+
+    public bool Is18OrOlder()
+    {
+        if (date.HasValue)
+        {
+            DateTime now = DateTime.UtcNow;
+            DateTime eighteenYearsAgo = now.AddYears(-18);
+
+            return date <= eighteenYearsAgo;
+        }
+
+        return false;
+    }
+
+    private int AreAllFieldsFilled()
+    {
+        if (string.IsNullOrWhiteSpace(eMail)
+            || string.IsNullOrWhiteSpace(userName)
+            || !date.HasValue
+            || string.IsNullOrWhiteSpace(password)
+            || string.IsNullOrWhiteSpace(nif)
+            || string.IsNullOrWhiteSpace(street)
+            || string.IsNullOrWhiteSpace(city)
+            || string.IsNullOrWhiteSpace(postCode)
+            || string.IsNullOrWhiteSpace(country))
+        {
+            return 3;
+        }
+
+        // Check if any field is already taken
+        if (IsEmailTaken())
+        {
+            errorMessage = "Email is already taken.";
+            return 1;
+        }
+
+        if (IsNIFTaken())
+        {
+            errorMessage = "NIF is already taken.";
+            return 2;
+        }
+
+        if (!Is18OrOlder())
+        {
+            return 4;
+        }
+
+        return 0;
     }
 
     private async Task SignUpAndNavigate()

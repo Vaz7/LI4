@@ -55,7 +55,7 @@ IF OBJECT_ID('Li4.Morada', 'U') IS NOT NULL
 
 -- Table Morada
 CREATE TABLE Li4.Morada (
-    idMorada INT NOT NULL,
+    idMorada INT IDENTITY(1,1) NOT NULL,
     rua VARCHAR(100) NOT NULL,
     cidade VARCHAR(50) NOT NULL,
     cod_postal VARCHAR(10) NOT NULL,

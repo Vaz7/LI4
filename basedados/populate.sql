@@ -1,9 +1,9 @@
 -- Populating Morada table
-INSERT INTO Li4.Morada (idMorada, rua, cidade, cod_postal, pais)
+INSERT INTO Li4.Morada (rua, cidade, cod_postal, pais)
 VALUES
-    (1, '123 Main St', 'City1', '12345', 'Country1'),
-    (2, '456 Oak St', 'City2', '67890', 'Country2'),
-    (3, '789 Pine St', 'City3', '13579', 'Country3');
+    ('123 Main St', 'City1', '12345', 'Country1'),
+    ('456 Oak St', 'City2', '67890', 'Country2'),
+    ('789 Pine St', 'City3', '13579', 'Country3');
 
 -- Populating Utilizador table
 INSERT INTO Li4.Utilizador (email, nome, data_nascimento, NIF,password, Morada_idMorada)
@@ -39,3 +39,7 @@ VALUES
     (1, 'Quadro 1', '2000', 30.5, 40.5, 'Description 1', 1, 'Artist 1', 1),
     (2, 'Quadro 2', '2010', 25.0, 35.0, 'Description 2', 0, 'Artist 2', 2),
     (3, 'Quadro 3', '1995', 40.0, 50.0, 'Description 3', 1, 'Artist 3', 3);
+
+
+-- SELECT * FROM Li4.Utilizador as u JOIN Li4.Morada as m ON m.idMorada = u.Morada_idMorada;
+-- SELECT * FROM Li4.Morada;

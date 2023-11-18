@@ -151,7 +151,7 @@
         foreach (Utilizador user in lista)
         {
             // Do something with each user object
-            Console.WriteLine($"User: {user.nome} {user.email}");
+            Console.WriteLine(user.ToString());
         }
         NavigationManager.NavigateTo("/");
     }

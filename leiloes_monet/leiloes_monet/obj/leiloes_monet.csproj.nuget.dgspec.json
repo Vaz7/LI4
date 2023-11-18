@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\henri\\Desktop\\LI4\\Leiloes_Monet\\Leiloes_Monet\\Leiloes_Monet.csproj": {}
+    "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\Leiloes_Monet\\Leiloes_Monet.csproj": {}
   },
   "projects": {
-    "C:\\Users\\henri\\Desktop\\LI4\\Leiloes_Monet\\Leiloes_Monet\\Leiloes_Monet.csproj": {
+    "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\Leiloes_Monet\\Leiloes_Monet.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\henri\\Desktop\\LI4\\Leiloes_Monet\\Leiloes_Monet\\Leiloes_Monet.csproj",
+        "projectUniqueName": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\Leiloes_Monet\\Leiloes_Monet.csproj",
         "projectName": "Leiloes_Monet",
-        "projectPath": "C:\\Users\\henri\\Desktop\\LI4\\Leiloes_Monet\\Leiloes_Monet\\Leiloes_Monet.csproj",
-        "packagesPath": "C:\\Users\\henri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\henri\\Desktop\\LI4\\Leiloes_Monet\\Leiloes_Monet\\obj\\",
+        "projectPath": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\Leiloes_Monet\\Leiloes_Monet.csproj",
+        "packagesPath": "C:\\Users\\gmari\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\Leiloes_Monet\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\henri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\gmari\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -64,7 +64,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
