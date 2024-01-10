@@ -1,8 +1,8 @@
-using Microsoft.AspNetCore.Mvc;
 using MonetLeiloesWeb.Models;
+using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace MonetLeiloesWeb.Controllers
+namespace leiloes_monet.Controllers
 {
     public class HomeController : Controller
     {
@@ -18,7 +18,7 @@ namespace MonetLeiloesWeb.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult QuemSomos()
         {
             return View();
         }

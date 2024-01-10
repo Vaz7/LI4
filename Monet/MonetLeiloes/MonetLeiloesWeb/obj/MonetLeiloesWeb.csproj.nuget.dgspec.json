@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gmari\\Desktop\\Monet\\MonetLeiloes\\MonetLeiloesWeb\\MonetLeiloesWeb.csproj": {}
+    "C:\\Users\\henri\\Desktop\\LI4\\Monet\\MonetLeiloes\\MonetLeiloesWeb\\MonetLeiloesWeb.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gmari\\Desktop\\Monet\\MonetLeiloes\\MonetLeiloesWeb\\MonetLeiloesWeb.csproj": {
+    "C:\\Users\\henri\\Desktop\\LI4\\Monet\\MonetLeiloes\\MonetLeiloesWeb\\MonetLeiloesWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gmari\\Desktop\\Monet\\MonetLeiloes\\MonetLeiloesWeb\\MonetLeiloesWeb.csproj",
+        "projectUniqueName": "C:\\Users\\henri\\Desktop\\LI4\\Monet\\MonetLeiloes\\MonetLeiloesWeb\\MonetLeiloesWeb.csproj",
         "projectName": "MonetLeiloesWeb",
-        "projectPath": "C:\\Users\\gmari\\Desktop\\Monet\\MonetLeiloes\\MonetLeiloesWeb\\MonetLeiloesWeb.csproj",
-        "packagesPath": "C:\\Users\\gmari\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gmari\\Desktop\\Monet\\MonetLeiloes\\MonetLeiloesWeb\\obj\\",
+        "projectPath": "C:\\Users\\henri\\Desktop\\LI4\\Monet\\MonetLeiloes\\MonetLeiloesWeb\\MonetLeiloesWeb.csproj",
+        "packagesPath": "C:\\Users\\henri\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\henri\\Desktop\\LI4\\Monet\\MonetLeiloes\\MonetLeiloesWeb\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\gmari\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\henri\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
