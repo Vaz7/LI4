@@ -1,0 +1,90 @@
+﻿
+@namespace leiloes_monet.Models
+@model Utilizador
+
+<html>
+<head>
+    <link rel="stylesheet" href="../../css/homepage.css">
+    <link rel="stylesheet" href="../../css/signup.css">
+</head>
+
+<body>
+    <div class="signupFrm">
+        <form method="post" asp-controller="SignUp" asp-action="Create" class="form">
+            <h1 class="title">Sign Up</h1>
+
+            <div class="inputContainer">
+                <input type="text" class="input" placeholder="" asp-for="email">
+                <label class="label">Email</label>
+                <span asp-validation-for="email" class="text-danger"></span>
+            </div>
+
+            <div class="inputContainer">
+                <input type="text" class="input" placeholder="" asp-for="nome">
+                <label class="label">Username</label>
+            </div>
+
+            <div class="inputContainer">
+                <input type="date" class="input" placeholder="" asp-for="data_nascimento">
+                <label class="label">Birthday Date</label>
+                <span asp-validation-for="data_nascimento" class="text-danger"></span>
+            </div>
+
+            <div class="inputContainer">
+                <input type="text" class="input" placeholder="" asp-for="nif">
+                <label class="label">NIF</label>
+            </div>
+
+            <div class="inputContainer">
+                <input type="text" class="input" placeholder="" asp-for="morada.cidade">
+                <label class="label">City</label>
+            </div>
+
+            <div class="inputContainer">
+                <input type="text" class="input" placeholder="" asp-for="morada.cod_postal">
+                <label class="label">Post Code</label>
+            </div>
+
+            <div class="inputContainer">
+                <input type="text" class="input" placeholder="" asp-for="morada.pais">
+                <label class="label">Country</label>
+            </div>
+
+            <div class="inputContainer">
+                <input type="text" class="input" placeholder="" asp-for="morada.rua">
+                <label class="label">Street</label>
+            </div>
+
+            <div class="inputContainer">
+                <input type="password" class="input" placeholder="" asp-for="password">
+                <label class="label">Password</label>
+            </div>
+
+            <input type="submit" class="submitBtn" value="Sign up">
+        </form>
+    </div>
+
+    <a asp-controller="Home" asp-action="Index" class="website-title">Leilões Monet</a>
+
+    <div class="button-container">
+        <a asp-controller="Home" asp-action="QuemSomos" class="quem-somos-button">Quem somos</a>
+        <a asp-controller="SignIn" asp-action="SignIn">Sign In</a>
+        <a asp-controller="SignUp" asp-action="Create">Sign Up</a>
+    </div>
+</body>
+
+</html>
+
+@section Scripts{
+    @{
+        <partial name="_ValidationScriptsPartial"/>
+    }
+}
+
+
+
+
+
+
+
+

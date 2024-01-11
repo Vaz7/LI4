@@ -70,10 +70,10 @@ CREATE TABLE Li4.Utilizador (
     data_nascimento DATETIME NOT NULL,
     NIF VARCHAR(9) NOT NULL,
 	password VARCHAR(40),
-    Morada_idMorada INT NOT NULL,
+    idMorada INT NOT NULL,
     PRIMARY KEY (email),
     CONSTRAINT fk_Utilizador_Morada
-        FOREIGN KEY (Morada_idMorada)
+        FOREIGN KEY (idMorada)
         REFERENCES Li4.Morada (idMorada)
         ON DELETE NO ACTION
         ON UPDATE NO ACTION
@@ -126,7 +126,6 @@ CREATE TABLE Li4.utilizador_leilao (
         ON DELETE NO ACTION
         ON UPDATE NO ACTION
 );
-
 -- Table Quadro
 CREATE TABLE Li4.Quadro (
     idQuadro INT NOT NULL,
