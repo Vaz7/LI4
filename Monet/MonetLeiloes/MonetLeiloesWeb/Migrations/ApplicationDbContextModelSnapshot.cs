@@ -60,12 +60,10 @@ namespace MonetLeiloesWeb.Migrations
                 {
                     b.Property<string>("emailUtilizador")
                         .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)")
-                        .HasColumnOrder(1);
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<int>("idLeilao")
-                        .HasColumnType("int")
-                        .HasColumnOrder(2);
+                        .HasColumnType("int");
 
                     b.Property<DateTime>("data")
                         .HasColumnType("datetime2");
@@ -210,15 +208,15 @@ namespace MonetLeiloesWeb.Migrations
             modelBuilder.Entity("MonetLeiloesWeb.Models.Licitacao", b =>
                 {
                     b.HasOne("MonetLeiloesWeb.Models.Utilizador", "utilizador")
-                        .WithMany("Licitacoes")
+                        .WithMany()
                         .HasForeignKey("emailUtilizador")
-                        .OnDelete(DeleteBehavior.NoAction)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("MonetLeiloesWeb.Models.Leilao", "leilao")
-                        .WithMany("Licitacoes")
+                        .WithMany()
                         .HasForeignKey("idLeilao")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("leilao");
@@ -246,16 +244,6 @@ namespace MonetLeiloesWeb.Migrations
                         .IsRequired();
 
                     b.Navigation("morada");
-                });
-
-            modelBuilder.Entity("MonetLeiloesWeb.Models.Leilao", b =>
-                {
-                    b.Navigation("Licitacoes");
-                });
-
-            modelBuilder.Entity("MonetLeiloesWeb.Models.Utilizador", b =>
-                {
-                    b.Navigation("Licitacoes");
                 });
 #pragma warning restore 612, 618
         }

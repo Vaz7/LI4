@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.AspNetCore.Identity.UI.UIFrameworkAttribute("Bootstrap5")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("MonetLeiloesWeb")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+007bde8149016a0833376adb659ad9683f05a4e8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4bdc46e6560dafd6f624d52b015c54af7202b1ac")]
 [assembly: System.Reflection.AssemblyProductAttribute("MonetLeiloesWeb")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MonetLeiloesWeb")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

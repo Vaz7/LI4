@@ -17,23 +17,22 @@ namespace MonetLeiloesWeb.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            // Configure composite primary key for Licitacao
-            modelBuilder.Entity<Licitacao>()
-                .HasKey(l => new { l.emailUtilizador, l.idLeilao });
-
-            // Configure foreign key relationships
+            modelBuilder.Entity<Leilao>().HasKey(m => new { m.Id});
+            modelBuilder.Entity<Licitacao>().HasKey(m => new { m.emailUtilizador,m.idLeilao });
             modelBuilder.Entity<Licitacao>()
                 .HasOne(l => l.utilizador)
-                .WithMany(u => u.Licitacoes)
+                .WithMany()
                 .HasForeignKey(l => l.emailUtilizador)
-                .OnDelete(DeleteBehavior.NoAction);
+                .OnDelete(DeleteBehavior.Restrict); // You can use DeleteBehavior.Cascade if appropriate
 
             modelBuilder.Entity<Licitacao>()
                 .HasOne(l => l.leilao)
-                .WithMany(le => le.Licitacoes)
-                .HasForeignKey(l => l.idLeilao);
-
-            // Other configurations...
+                .WithMany()
+                .HasForeignKey(l => l.idLeilao)
+                .OnDelete(DeleteBehavior.Restrict);
+            modelBuilder.Entity<Morada>().HasKey(m => new { m.Id});
+            modelBuilder.Entity<Quadro>().HasKey(m => new { m.Id});
+            modelBuilder.Entity<Utilizador>().HasKey(m => new { m.email});
         }
     }
 

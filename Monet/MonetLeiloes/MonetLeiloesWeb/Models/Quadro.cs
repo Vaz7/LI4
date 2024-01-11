@@ -5,7 +5,6 @@ namespace MonetLeiloesWeb.Models
 {
     public class Quadro
     {
-        [Key]
         public int Id { get; set; }
         [Required]
         [StringLength(100)]

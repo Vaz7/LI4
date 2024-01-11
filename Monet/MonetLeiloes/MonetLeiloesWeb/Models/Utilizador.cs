@@ -6,7 +6,6 @@ namespace MonetLeiloesWeb.Models
 {
     public class Utilizador
     {
-        [Key]
         [StringLength(100)]
         public string email { get; set; }
         [Required]
@@ -24,6 +23,5 @@ namespace MonetLeiloesWeb.Models
         public int idMorada { get; set; }
         [ForeignKey("idMorada")]
         public virtual Morada morada { get; set; }
-        public virtual ICollection<Licitacao> Licitacoes { get; set; }
     }
 }
