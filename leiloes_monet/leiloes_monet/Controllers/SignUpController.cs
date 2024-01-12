@@ -83,7 +83,5 @@ namespace leiloes_monet.Controllers
 
             return false;
         }
-
-
-    }
+	}
 }

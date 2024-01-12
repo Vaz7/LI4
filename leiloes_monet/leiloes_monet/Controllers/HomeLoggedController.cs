@@ -18,6 +18,7 @@ namespace leiloes_monet.Controllers
         }
         public IActionResult Logout()
         {
+            HttpContext.Session.SetString("email", "notOk");
             HttpContext.Session.SetString("Autorizado", "notOk");
             return RedirectToAction("Index", "Home");
         }

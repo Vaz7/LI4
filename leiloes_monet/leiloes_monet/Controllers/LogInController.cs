@@ -28,7 +28,8 @@ namespace leiloes_monet.Controllers
 			}
 			else
 			{
-				HttpContext.Session.SetString("Autorizado", "ok");
+                HttpContext.Session.SetString("email", email);
+                HttpContext.Session.SetString("Autorizado", "ok");
                 return RedirectToAction("Index", "HomeLogged");
             }
 		}

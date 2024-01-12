@@ -9,11 +9,11 @@
 </head>
 
 <body>
-    <a asp-controller="HomeLogged" asp-action="Logout" class="website-title">Leilões Monet</a>
+    <a asp-controller="HomeLogged" asp-action="Index" class="website-title">Leilões Monet</a>
     <div class="button-container">
-        <a asp-controller="HomeLogged" asp-action="Meu perfil" class="quem-somos-button">Meu perfil</a>
+        <a asp-controller="MeuPerfil" asp-action="Meuperfil" class="quem-somos-button">Meu perfil</a>
         <a asp-controller="HomeLogged" asp-action="Leiloes" class="quem-somos-button">Leiloes</a>
-        <a asp-controller="HomeLogged" asp-action="QuemSomos" class="quem-somos-button">Quem somos</a>
+        <a asp-controller="Home" asp-action="QuemSomos" class="quem-somos-button">Quem somos</a>
 
         <a asp-controller="HomeLogged" asp-action="Logout">Log out</a>
     </div>
@@ -26,7 +26,7 @@
 
     <div class="new-button-container">
         <a class="button1" asp-controller="Home" asp-action="Index">Veja os nossos leilões</a>
-        <a class="button2" asp-controller="Home" asp-action="Index">Criar Leição</a>
+        <a class="button2" asp-controller="Home" asp-action="Index">Criar Leilão</a>
         <!-- Add more buttons as needed -->
     </div>
 
