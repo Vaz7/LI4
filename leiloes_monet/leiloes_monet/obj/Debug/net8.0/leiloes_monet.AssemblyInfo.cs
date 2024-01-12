@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("leiloes_monet")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+de248399d576acca43229880bd1c32c1f32e4011")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+07a557d82be56fa235700be8539cc212f7fd39c9")]
 [assembly: System.Reflection.AssemblyProductAttribute("leiloes_monet")]
 [assembly: System.Reflection.AssemblyTitleAttribute("leiloes_monet")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

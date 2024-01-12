@@ -1,0 +1,54 @@
+﻿@{
+    //ViewData["Title"] = "Home Page";
+}
+
+
+<html>
+<head>
+    <link rel="stylesheet" href="../../css/homepage.css">
+</head>
+
+<body>
+    <a asp-controller="HomeLogged" asp-action="Logout" class="website-title">Leilões Monet</a>
+    <div class="button-container">
+        <a asp-controller="HomeLogged" asp-action="Meu perfil" class="quem-somos-button">Meu perfil</a>
+        <a asp-controller="HomeLogged" asp-action="Leiloes" class="quem-somos-button">Leiloes</a>
+        <a asp-controller="HomeLogged" asp-action="QuemSomos" class="quem-somos-button">Quem somos</a>
+
+        <a asp-controller="HomeLogged" asp-action="Logout">Log out</a>
+    </div>
+
+    <div class="header-text">
+        <p>
+            Somos colecionadores, apreciadores e negociantes de obras de arte preciosas.
+        </p>
+    </div>
+
+    <div class="new-button-container">
+        <a class="button1" asp-controller="Home" asp-action="Index">Veja os nossos leilões</a>
+        <a class="button2" asp-controller="Home" asp-action="Index">Criar Leição</a>
+        <!-- Add more buttons as needed -->
+    </div>
+
+    <div class="image-container">
+        <img src="/imagens/grito.jpg" style="max-width: 40%; max-height: 40%;" />
+        <img src="/imagens/bar.jpg" style="max-width: 40%; max-height: 40%;">
+    </div>
+
+
+    <div class="resume-text">
+        <p>Na Leilões Monet, acreditamos no poder da arte para inspirar, cativar e transformar vidas.</p><br>
+
+        <p>Acreditamos que a arte transcende barreiras, unindo pessoas de todas as culturas e lugares, criando uma linguagem universal.</p><br>
+
+
+        <p>O nosso compromisso é apoiar artistas, oferecendo uma plataforma para exibirem o seu talento, obter reconhecimento e receber um justo valor pelo seu trabalho.</p><br>
+
+        <p>Qualidade e Autenticidade: Comprometemo-nos com altos padrões de qualidade e autenticidade em todas as obras de arte que leiloamos.</p><br>
+
+        <p>Acreditamos que a arte deve ser acessível a todos, oferecendo uma variedade de obras para diferentes gostos e orçamentos.</p><br>
+
+    </div>
+</body>
+</html>
+

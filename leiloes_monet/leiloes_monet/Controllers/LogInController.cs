@@ -1,5 +1,6 @@
 ﻿using leiloes_monet.Models.DAL;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Http;
 
 namespace leiloes_monet.Controllers
 {
@@ -27,7 +28,8 @@ namespace leiloes_monet.Controllers
 			}
 			else
 			{
-                return RedirectToAction("Index", "Home");
+				HttpContext.Session.SetString("Autorizado", "ok");
+                return RedirectToAction("Index", "HomeLogged");
             }
 		}
 	}

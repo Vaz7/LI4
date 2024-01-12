@@ -18,6 +18,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\henri\Desktop\LI4\leiloes_monet\leiloes_monet
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/henri/Desktop/LI4/leiloes_monet/leiloes_monet/Views/HomeLogged/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZUxvZ2dlZFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/henri/Desktop/LI4/leiloes_monet/leiloes_monet/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

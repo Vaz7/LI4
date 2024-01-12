@@ -21,7 +21,6 @@ body {
     margin-bottom: 60px;
 }
 
-
 .button-container {
     position: absolute;
     top: 10px;
@@ -72,10 +71,11 @@ body {
 }
 
 .image-container {
-    display: flex; /* Display children elements (images) in a row */
+    display: absolute; /* Display children elements (images) in a row */
     justify-content: center; /* Center the images horizontally */
+    margin-left: 20%;
     align-items: center; /* Center the images vertically */
-    margin-top: 50px; /* Adjust the top margin as needed */
+    margin-top: 300px; /* Adjust the top margin as needed */
 }
 
     .image-container img {
@@ -99,3 +99,37 @@ body {
     margin-right: auto;
     display: table;
 }
+
+/* New button container */
+.new-button-container {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column; /* Set to column to stack buttons vertically */
+    align-items: center; /* Center items horizontally */
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+    .new-button-container .button1,
+    .new-button-container .button2 {
+        margin-bottom: 10px; /* Add margin between the buttons */
+        font-size: 16px;
+        cursor: pointer;
+        color: #ffffff;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .new-button-container .button1 {
+        padding: 10px 50px;
+        background-color: purple; /* Change this color to the desired background color for Button 1 */
+    }
+
+    .new-button-container .button2 {
+        padding: 10px 20px;
+        color: black;
+        background-color: #ffd800; /* Change this color to the desired background color for Button 2 */
+        
+    }
