@@ -68,14 +68,14 @@ body {
 .header-text {
     text-align: center;
     font-size: 40px; /* Adjust this value to set the font size */
-    margin-top: 250px; /* Adjust this value to set the top margin */
+    margin-top: 150px; /* Adjust this value to set the top margin */
 }
 
 .image-container {
     display: flex; /* Display children elements (images) in a row */
     justify-content: center; /* Center the images horizontally */
     align-items: center; /* Center the images vertically */
-    margin-top: 350px; /* Adjust the top margin as needed */
+    margin-top: 50px; /* Adjust the top margin as needed */
 }
 
     .image-container img {
@@ -94,7 +94,7 @@ body {
 .resume-text {
     text-align: center;
     font-size: 40px; /* Adjust this value to set the font size */
-    margin-top: 400px; /* Adjust this value to set the top margin */
+    margin-top: 200px; /* Adjust this value to set the top margin */
     margin-left: auto;
     margin-right: auto;
     display: table;

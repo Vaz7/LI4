@@ -22,10 +22,13 @@ namespace leiloes_monet.Controllers
 			bool exists = iuser.UserExists(email,password);
 			if (!exists)
 			{
-				ViewData["AccountError"] = "Invalid Account";
+				TempData["AccountError"] = "Invalid Account!";
+				return View();
 			}
-			
-			return RedirectToAction("Index", "Home");
+			else
+			{
+                return RedirectToAction("Index", "Home");
+            }
 		}
 	}
 }

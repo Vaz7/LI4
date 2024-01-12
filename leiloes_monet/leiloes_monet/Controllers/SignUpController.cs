@@ -52,7 +52,7 @@ namespace leiloes_monet.Controllers
                 };
                 iuser.addClient(obj);
 
-
+                TempData["Registado"] = "Registo efetuado!";
                 return RedirectToAction("Index","Home");
             }
             return View(obj);

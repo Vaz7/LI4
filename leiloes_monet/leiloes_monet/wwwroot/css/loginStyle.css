@@ -46,27 +46,27 @@ input {
   box-sizing: border-box;
   width: 100%;
   outline: none;
-  height: 60px;
+  height: 50px;
   line-height: 60px;
-  border-radius: 4px;
+  border-radius: 4px
 }
 
-input[type="text"],
-input[type="email"] {
-  width: 100%;
-  padding: 0 0 0 10px;
-  margin: 0;
-  color: #8a8b8e;
-  border: 1px solid #c2c0ca;
-  font-style: normal;
-  font-size: 16px;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  position: relative;
-  display: inline-block;
-  background: none;
-}
+    input[type="text"],
+    input[type="email"] {
+        width: 100%;
+        padding: 0 0 0 10px;
+        margin: 0;
+        color: #8a8b8e;
+        border: 1px solid #c2c0ca;
+        font-style: normal;
+        font-size: 16px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        position: relative;
+        display: inline-block;
+        background: none;
+    }
 input[type="text"]:focus,
 input[type="email"]:focus {
   border-color: #3ca9e2;
@@ -126,7 +126,7 @@ input[type="submit"] {
   cursor: pointer;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
-  font-size: 18px;
+  font-size: 16px;
   position: relative;
   display: inline-block;
   cursor: pointer;

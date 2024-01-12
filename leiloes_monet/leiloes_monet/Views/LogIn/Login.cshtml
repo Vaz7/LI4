@@ -9,21 +9,22 @@
 </head>
 
 
+
 <body>
 	<!-- partial:index.partial.html -->
 	<div id="login-form-wrap">
 		<h2>Login</h2>
 		<form method="post" asp-controller="LogIn" asp-action="Login" id="login-form">
 			<p>
-				<input type="text" class="input-text" placeholder="e-Mail" name="email" required>
-				<span class="text-danger">@ViewData["AccountError"]</span>
+				<input type="text" class="input-text" placeholder="e-mail" name="email" required>
 			</p>
 			<p>
-				<input type="password" class="password" placeholder="Password" name="password" required>
+				<input type="password" class="input-text" placeholder="Password" name="password" required>
 			</p>
 			<p>
 				<input type="submit" id="login" value="Login">
 			</p>
+			
 		</form>
 		<div id="create-account-wrap">
 		</div><!--create-account-wrap-->
