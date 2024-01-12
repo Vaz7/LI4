@@ -76,6 +76,26 @@ namespace leiloes_monet.Models.DAL
             }
         }
 
+        public bool UserExists(string email, string password)
+        {
+            using (SqlConnection con = new SqlConnection(connectionstring))
+            {
+                con.Open();
+
+                string query = "SELECT COUNT(*) FROM [Li4].[Utilizador] WHERE [email] = @Email AND [password] = @Password";
+
+                using (SqlCommand cmd = new SqlCommand(query, con))
+                {
+                    cmd.Parameters.AddWithValue("@Email", email);
+                    cmd.Parameters.AddWithValue("@Password", password);
+
+                    int count = (int)cmd.ExecuteScalar();
+
+                    return count > 0;
+                }
+            }
+        }
+
 
     }
 }

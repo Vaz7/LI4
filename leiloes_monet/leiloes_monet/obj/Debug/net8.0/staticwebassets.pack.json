@@ -5,12 +5,20 @@
       "PackagePath": "staticwebassets\\leiloes_monet.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\css\\formStyle.css",
+      "PackagePath": "staticwebassets\\css\\formStyle.css"
+    },
+    {
       "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\css\\homepage.css",
       "PackagePath": "staticwebassets\\css\\homepage.css"
     },
     {
-      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\css\\signup.css",
-      "PackagePath": "staticwebassets\\css\\signup.css"
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\css\\loginStyle.css",
+      "PackagePath": "staticwebassets\\css\\loginStyle.css"
+    },
+    {
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\css\\montserrat-font.css",
+      "PackagePath": "staticwebassets\\css\\montserrat-font.css"
     },
     {
       "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\css\\site.css",
@@ -19,6 +27,110 @@
     {
       "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\Montserrat\\Montserrat-Black.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-Black.ttf"
+    },
+    {
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\Montserrat\\Montserrat-BlackItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-BlackItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\Montserrat\\Montserrat-Bold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-Bold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\Montserrat\\Montserrat-BoldItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-BoldItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\Montserrat\\Montserrat-ExtraBold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-ExtraBold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\Montserrat\\Montserrat-ExtraBoldItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-ExtraBoldItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\Montserrat\\Montserrat-ExtraLight.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-ExtraLight.ttf"
+    },
+    {
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\Montserrat\\Montserrat-ExtraLightItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-ExtraLightItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\Montserrat\\Montserrat-Italic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-Italic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\Montserrat\\Montserrat-Light.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-Light.ttf"
+    },
+    {
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\Montserrat\\Montserrat-LightItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-LightItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\Montserrat\\Montserrat-Medium.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-Medium.ttf"
+    },
+    {
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\Montserrat\\Montserrat-MediumItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-MediumItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\Montserrat\\Montserrat-Regular.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-Regular.ttf"
+    },
+    {
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\Montserrat\\Montserrat-SemiBold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-SemiBold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\Montserrat\\Montserrat-SemiBoldItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-SemiBoldItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\Montserrat\\Montserrat-Thin.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-Thin.ttf"
+    },
+    {
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\Montserrat\\Montserrat-ThinItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-ThinItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\Montserrat\\OFL.txt",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat\\OFL.txt"
+    },
+    {
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\material-design-iconic-font\\css\\material-design-iconic-font.css",
+      "PackagePath": "staticwebassets\\fonts\\material-design-iconic-font\\css\\material-design-iconic-font.css"
+    },
+    {
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\material-design-iconic-font\\css\\material-design-iconic-font.min.css",
+      "PackagePath": "staticwebassets\\fonts\\material-design-iconic-font\\css\\material-design-iconic-font.min.css"
+    },
+    {
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\material-design-iconic-font\\fonts\\Material-Design-Iconic-Font.eot",
+      "PackagePath": "staticwebassets\\fonts\\material-design-iconic-font\\fonts\\Material-Design-Iconic-Font.eot"
+    },
+    {
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\material-design-iconic-font\\fonts\\Material-Design-Iconic-Font.svg",
+      "PackagePath": "staticwebassets\\fonts\\material-design-iconic-font\\fonts\\Material-Design-Iconic-Font.svg"
+    },
+    {
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\material-design-iconic-font\\fonts\\Material-Design-Iconic-Font.ttf",
+      "PackagePath": "staticwebassets\\fonts\\material-design-iconic-font\\fonts\\Material-Design-Iconic-Font.ttf"
+    },
+    {
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\material-design-iconic-font\\fonts\\Material-Design-Iconic-Font.woff",
+      "PackagePath": "staticwebassets\\fonts\\material-design-iconic-font\\fonts\\Material-Design-Iconic-Font.woff"
+    },
+    {
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\material-design-iconic-font\\fonts\\Material-Design-Iconic-Font.woff2",
+      "PackagePath": "staticwebassets\\fonts\\material-design-iconic-font\\fonts\\Material-Design-Iconic-Font.woff2"
     },
     {
       "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\imagens\\bar.jpg",

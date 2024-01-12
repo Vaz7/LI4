@@ -1,0 +1,51 @@
+﻿@namespace leiloes_monet.Models
+
+
+<html>
+<head>
+	<link rel="stylesheet" href="../../css/homepage.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link rel="stylesheet" href="../../css/loginStyle.css">
+</head>
+
+
+<body>
+	<!-- partial:index.partial.html -->
+	<div id="login-form-wrap">
+		<h2>Login</h2>
+		<form method="post" asp-controller="LogIn" asp-action="Login" id="login-form">
+			<p>
+				<input type="text" class="input-text" placeholder="e-Mail" name="email" required>
+				<span class="text-danger">@ViewData["AccountError"]</span>
+			</p>
+			<p>
+				<input type="password" class="password" placeholder="Password" name="password" required>
+			</p>
+			<p>
+				<input type="submit" id="login" value="Login">
+			</p>
+		</form>
+		<div id="create-account-wrap">
+		</div><!--create-account-wrap-->
+	</div><!--login-form-wrap-->
+	<!-- partial -->
+	<a asp-controller="Home" asp-action="Index" class="website-title">Leilões Monet</a>
+
+	<div class="button-container">
+		<a asp-controller="Home" asp-action="QuemSomos" class="quem-somos-button">Quem somos</a>
+		<a asp-controller="LogIn" asp-action="Login">Sign In</a>
+		<a asp-controller="SignUp" asp-action="Create">Sign Up</a>
+	</div>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+

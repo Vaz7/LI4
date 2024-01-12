@@ -4,5 +4,6 @@
     {
         public void addClient(Utilizador user);
         public bool EmailExists(String email);
+        public bool UserExists(String email, String password);
     }
 }

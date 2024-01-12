@@ -27,7 +27,7 @@ namespace leiloes_monet.Controllers
             if (EmailExists(obj.email))
             {
                 // Add a model error for the existing email
-                ModelState.AddModelError("email", "Email already exists. Please choose a different one.");
+                ModelState.AddModelError("email", "Email already exists.");
 
                 // Return the view with validation errors
                 return View(obj);
@@ -35,7 +35,7 @@ namespace leiloes_monet.Controllers
             if (!DateValid(obj.data_nascimento))
             {
                 // Add a model error for the existing email
-                ModelState.AddModelError("data_nascimento", "Date is not valid. Please choose a different one.");
+                ModelState.AddModelError("data_nascimento", "Date is not valid.");
 
                 // Return the view with validation errors
                 return View(obj);
