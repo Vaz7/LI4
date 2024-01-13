@@ -13,8 +13,6 @@ namespace leiloes_monet.Models
         public string descricao { get; set; }
         public bool moldura { get; set; }
         public string autor {  get; set; }
-        public byte[] fotografia { get; set; }
-        public int idLeilao { get; set; }
-        public virtual Leilao leilao { get; set; }
+        public Imagem imagem { get; set; }
     }
 }

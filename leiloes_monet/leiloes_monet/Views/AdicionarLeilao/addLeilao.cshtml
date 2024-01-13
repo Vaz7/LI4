@@ -1,0 +1,99 @@
+﻿@namespace leiloes_monet.Models
+@model Leilao
+
+<html>
+<head>
+	<link rel="stylesheet" href="../../css/homepage.css">
+	<meta charset="utf-8">
+	<title>Form-v10 by Colorlib</title>
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- Font-->
+	<link rel="stylesheet" type="text/css" href="../../css/montserrat-font.css">
+	<link rel="stylesheet" type="text/css" href="../../fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+	<!-- Main Style Css -->
+	<link rel="stylesheet" href="../../css/formStyle.css" />
+	<link rel="stylesheet" href="../../css/botoesAdd.css" />
+</head>
+
+<body class="form-v10">
+	<div class="page-content">
+		<div class="form-v10-content">
+			<form method="post" asp-controller="AdicionarLeilao" asp-action="addLeilao" class="form-detail" enctype="multipart/form-data">
+				<div class="form-left">
+					<h2>Dados Leilão</h2>
+					<div class="form-row">
+						<input type="text" class="input-text" placeholder="Titulo" asp-for="nome" required>
+						<span asp-validation-for="nome" class="text-danger"></span>
+					</div>
+
+					<div class="form-row">
+						<label for="valor_base"></label>
+						<input type="number" step="0.01" class="Valor" placeholder="Valor Base (em €)" asp-for="valor_base" required min="0">
+						<span asp-validation-for="valor_base" class="text-danger"></span>
+					</div>
+
+				</div>
+
+
+				<div class="form-right">
+					<h2>Quadro</h2>
+					<div class="form-row">
+						<input type="text" class="Titulo" placeholder="Titulo" asp-for="quadro.titulo" required>
+					</div>
+					<div class="form-row">
+						<input type="text" class="Autor" placeholder="Autor" asp-for="quadro.autor" required>
+					</div>
+					<div class="form-group">
+						<div class="form-row form-row-1">
+							<input type="number" class="Ano" placeholder="Ano" asp-for="quadro.ano" required min="0" max="@DateTime.Now.Year">
+							<span asp-validation-for="quadro.ano" class="text-danger"></span>
+						</div>
+					</div>
+					<div class="form-row">
+						<input type="number" class="Altura" placeholder="Altura" asp-for="quadro.altura" required min="0">
+						<span asp-validation-for="quadro.altura" class="text-danger"></span>
+					</div>
+
+					<div class="form-row">
+						<input type="number" class="Largura" placeholder="Largura" asp-for="quadro.largura" required min="0">
+						<span asp-validation-for="quadro.largura" class="text-danger"></span>
+					</div>
+
+					<div class="form-row">
+						<textarea class="Descricao" placeholder="Descrição" asp-for="quadro.descricao" required style="width: 100%; height: 100px;"></textarea>
+						<span asp-validation-for="quadro.descricao" class="text-danger"></span>
+					</div>
+
+
+					<div class="form-row">
+						<label for="moldura">Moldura:</label>
+						<select class="Moldura" asp-for="quadro.moldura" required>
+							<option value="true">Sim</option>
+							<option value="false">Não</option>
+						</select>
+					</div>
+					<div class="form-row">
+						<label for="Imagem">Imagem:</label>
+						<input type="file" class="Imagem" placeholder="Imagem" asp-for="quadro.imagem.ImageFile" required>
+					</div>
+					<div class="form-row-last">
+						<input type="submit" class="register" value="Criar Leilão">
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<a asp-controller="HomeLogged" asp-action="Index" class="website-title">Leilões Monet</a>
+	<div class="button-container">
+		<a asp-controller="MeuPerfil" asp-action="Meuperfil" class="quem-somos-button">Meu perfil</a>
+		<a asp-controller="HomeLogged" asp-action="Leiloes" class="quem-somos-button">Leiloes</a>
+		<a asp-controller="Home" asp-action="QuemSomos" class="quem-somos-button">Quem somos</a>
+
+		<a asp-controller="HomeLogged" asp-action="Logout">Log out</a>
+	</div>
+</body>
+
+</html>
+

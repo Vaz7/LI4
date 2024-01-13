@@ -2358,19 +2358,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\henri\\.nuget\\packages\\": {}
+    "C:\\Users\\gmari\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\leiloes_monet.csproj",
+      "projectUniqueName": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\leiloes_monet.csproj",
       "projectName": "leiloes_monet",
-      "projectPath": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\leiloes_monet.csproj",
-      "packagesPath": "C:\\Users\\henri\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\obj\\",
+      "projectPath": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\leiloes_monet.csproj",
+      "packagesPath": "C:\\Users\\gmari\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\henri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\gmari\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

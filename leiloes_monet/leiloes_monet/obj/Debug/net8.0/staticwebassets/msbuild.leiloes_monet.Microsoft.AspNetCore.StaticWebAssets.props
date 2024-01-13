@@ -1,5 +1,21 @@
 ﻿<Project>
   <ItemGroup>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\css\botoesAdd.css))">
+      <SourceType>Package</SourceType>
+      <SourceId>leiloes_monet</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/leiloes_monet</BasePath>
+      <RelativePath>css/botoesAdd.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\css\botoesAdd.css))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\css\formStyle.css))">
       <SourceType>Package</SourceType>
       <SourceId>leiloes_monet</SourceId>
@@ -511,6 +527,150 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\fonts\Montserrat\OFL.txt))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\imagem\0fe228b3-7e05-4930-a43b-154d252d4acd_Microsoft.AspNetCore.Http.FormFile))">
+      <SourceType>Package</SourceType>
+      <SourceId>leiloes_monet</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/leiloes_monet</BasePath>
+      <RelativePath>imagem/0fe228b3-7e05-4930-a43b-154d252d4acd_Microsoft.AspNetCore.Http.FormFile</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\imagem\0fe228b3-7e05-4930-a43b-154d252d4acd_Microsoft.AspNetCore.Http.FormFile))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\imagem\4e6bea4f-2833-4a1a-9698-3b8760da5b17_Microsoft.AspNetCore.Http.FormFile))">
+      <SourceType>Package</SourceType>
+      <SourceId>leiloes_monet</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/leiloes_monet</BasePath>
+      <RelativePath>imagem/4e6bea4f-2833-4a1a-9698-3b8760da5b17_Microsoft.AspNetCore.Http.FormFile</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\imagem\4e6bea4f-2833-4a1a-9698-3b8760da5b17_Microsoft.AspNetCore.Http.FormFile))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\imagem\5151f5e4-9ac1-4b6e-824b-dcf0e2aa66e3_Microsoft.AspNetCore.Http.FormFile))">
+      <SourceType>Package</SourceType>
+      <SourceId>leiloes_monet</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/leiloes_monet</BasePath>
+      <RelativePath>imagem/5151f5e4-9ac1-4b6e-824b-dcf0e2aa66e3_Microsoft.AspNetCore.Http.FormFile</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\imagem\5151f5e4-9ac1-4b6e-824b-dcf0e2aa66e3_Microsoft.AspNetCore.Http.FormFile))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\imagem\8452b16d-fba4-4cb1-ad51-d7ac2be83958_Microsoft.AspNetCore.Http.FormFile))">
+      <SourceType>Package</SourceType>
+      <SourceId>leiloes_monet</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/leiloes_monet</BasePath>
+      <RelativePath>imagem/8452b16d-fba4-4cb1-ad51-d7ac2be83958_Microsoft.AspNetCore.Http.FormFile</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\imagem\8452b16d-fba4-4cb1-ad51-d7ac2be83958_Microsoft.AspNetCore.Http.FormFile))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\imagem\9afdda02-ad35-4add-b012-86620b24ee81_Microsoft.AspNetCore.Http.FormFile))">
+      <SourceType>Package</SourceType>
+      <SourceId>leiloes_monet</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/leiloes_monet</BasePath>
+      <RelativePath>imagem/9afdda02-ad35-4add-b012-86620b24ee81_Microsoft.AspNetCore.Http.FormFile</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\imagem\9afdda02-ad35-4add-b012-86620b24ee81_Microsoft.AspNetCore.Http.FormFile))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\imagem\a40105b0-32b0-434d-9cc4-202577e75e67_Microsoft.AspNetCore.Http.FormFile))">
+      <SourceType>Package</SourceType>
+      <SourceId>leiloes_monet</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/leiloes_monet</BasePath>
+      <RelativePath>imagem/a40105b0-32b0-434d-9cc4-202577e75e67_Microsoft.AspNetCore.Http.FormFile</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\imagem\a40105b0-32b0-434d-9cc4-202577e75e67_Microsoft.AspNetCore.Http.FormFile))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\imagem\a64d97e5-a6f9-4074-a9b5-fd6999b732df_Microsoft.AspNetCore.Http.FormFile))">
+      <SourceType>Package</SourceType>
+      <SourceId>leiloes_monet</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/leiloes_monet</BasePath>
+      <RelativePath>imagem/a64d97e5-a6f9-4074-a9b5-fd6999b732df_Microsoft.AspNetCore.Http.FormFile</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\imagem\a64d97e5-a6f9-4074-a9b5-fd6999b732df_Microsoft.AspNetCore.Http.FormFile))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\imagem\a6ba2408-f2dd-447e-bff9-b29b64990238_Microsoft.AspNetCore.Http.FormFile))">
+      <SourceType>Package</SourceType>
+      <SourceId>leiloes_monet</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/leiloes_monet</BasePath>
+      <RelativePath>imagem/a6ba2408-f2dd-447e-bff9-b29b64990238_Microsoft.AspNetCore.Http.FormFile</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\imagem\a6ba2408-f2dd-447e-bff9-b29b64990238_Microsoft.AspNetCore.Http.FormFile))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\imagem\d92093cb-d930-4e6c-9aa5-08d4c5a5a07e_Microsoft.AspNetCore.Http.FormFile))">
+      <SourceType>Package</SourceType>
+      <SourceId>leiloes_monet</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/leiloes_monet</BasePath>
+      <RelativePath>imagem/d92093cb-d930-4e6c-9aa5-08d4c5a5a07e_Microsoft.AspNetCore.Http.FormFile</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\imagem\d92093cb-d930-4e6c-9aa5-08d4c5a5a07e_Microsoft.AspNetCore.Http.FormFile))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\imagens\bar.jpg))">
       <SourceType>Package</SourceType>

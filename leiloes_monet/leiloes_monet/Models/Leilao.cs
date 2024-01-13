@@ -11,8 +11,9 @@ namespace leiloes_monet.Models
         public string nome { get; set; }
         public DateTime data_inicio { get; set; }
         public DateTime data_fim { get; set; }
+        public bool estado { get; set; }
         public double valor_base { get; set; }
-        public string emailUtilizador { get; set; }
-        public virtual Utilizador utilizador { get; set; }
+        public Utilizador utilizador { get; set; }
+        public Quadro quadro { get; set; }
     }
 }

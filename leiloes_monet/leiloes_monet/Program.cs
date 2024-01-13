@@ -8,6 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<IUser, UserDAL>();
+builder.Services.AddScoped<ILeilao, LeilaoDAL>();
 
 // Add session services
 builder.Services.AddSession();

@@ -81,13 +81,14 @@ CREATE TABLE Li4.Utilizador (
 
 -- Table Leilao
 CREATE TABLE Li4.leilao (
-    idLeilao INT NOT NULL,
+    idLeilao INT IDENTITY(1,1) NOT NULL,
     nome VARCHAR(150) NOT NULL,
     data_inicio DATETIME NOT NULL,
     data_fim DATETIME NOT NULL,
-    estado VARCHAR(45) NOT NULL,
+    estado TINYINT NOT NULL,
     valor_base DECIMAL(7,2) NOT NULL,
     Utilizador_email VARCHAR(100) NOT NULL,
+    idQuadro INT NOT NULL,
     PRIMARY KEY (idLeilao),
     CONSTRAINT fk_Leilao_Utilizador1
         FOREIGN KEY (Utilizador_email)
@@ -96,51 +97,29 @@ CREATE TABLE Li4.leilao (
         ON UPDATE NO ACTION
 );
 
+
 -- Table licitacao
 CREATE TABLE Li4.licitacao (
-    idlicitacao INT NOT NULL,
+    utilizador_email VARCHAR(100) NOT NULL,
+    leilao_idLeilao INT NOT NULL,
     data DATETIME NOT NULL,
     valor DECIMAL(7,2) NOT NULL,
-    PRIMARY KEY (idlicitacao)
+    PRIMARY KEY (utilizador_email, leilao_idLeilao),
+    FOREIGN KEY (utilizador_email) REFERENCES Li4.Utilizador(email),
+    FOREIGN KEY (leilao_idLeilao) REFERENCES Li4.leilao(idLeilao)
 );
 
--- Table utilizador_leilao
-CREATE TABLE Li4.utilizador_leilao (
-    Utilizador_email VARCHAR(100) NOT NULL,
-    Leilao_idLeilao INT NOT NULL,
-    licitacao_idlicitacao INT NOT NULL,
-    PRIMARY KEY (Utilizador_email, Leilao_idLeilao),
-    CONSTRAINT fk_utilizador_leilao_Utilizador1
-        FOREIGN KEY (Utilizador_email)
-        REFERENCES Li4.Utilizador (email)
-        ON DELETE NO ACTION
-        ON UPDATE NO ACTION,
-    CONSTRAINT fk_utilizador_leilao_Leilao1
-        FOREIGN KEY (Leilao_idLeilao)
-        REFERENCES Li4.Leilao (idLeilao)
-        ON DELETE NO ACTION
-        ON UPDATE NO ACTION,
-    CONSTRAINT fk_utilizador_leilao_licitacao1
-        FOREIGN KEY (licitacao_idlicitacao)
-        REFERENCES Li4.licitacao (idlicitacao)
-        ON DELETE NO ACTION
-        ON UPDATE NO ACTION
-);
+
 -- Table Quadro
 CREATE TABLE Li4.Quadro (
-    idQuadro INT NOT NULL,
-    Título VARCHAR(100) NOT NULL,
-    Ano VARCHAR(4) NOT NULL,
-    Altura DECIMAL(5,2) NOT NULL,
-    Largura DECIMAL(5,2) NOT NULL,
-    Descricao NVARCHAR(1000) NOT NULL,
-    Moldura TINYINT NOT NULL,
-    Autor VARCHAR(100) NOT NULL,
-    Leilao_idLeilao INT NOT NULL,
+    idQuadro INT IDENTITY(1,1) NOT NULL,
+    titulo VARCHAR(100) NOT NULL,
+    ano VARCHAR(4) NOT NULL,
+    altura DECIMAL(5,2) NOT NULL,
+    largura DECIMAL(5,2) NOT NULL,
+    descricao NVARCHAR(1000) NOT NULL,
+    moldura TINYINT NOT NULL,
+    autor VARCHAR(100) NOT NULL,
+	imagem VARCHAR(MAX) NOT NULL,
     PRIMARY KEY (idQuadro),
-    CONSTRAINT fk_Quadro_Leilao1
-        FOREIGN KEY (Leilao_idLeilao)
-        REFERENCES Li4.Leilao (idLeilao)
-        ON DELETE NO ACTION
-        ON UPDATE NO ACTION
 );
