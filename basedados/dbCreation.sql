@@ -3,7 +3,6 @@ IF (SCHEMA_ID('Li4') IS NULL)
 BEGIN
     EXEC ('CREATE SCHEMA [Li4] AUTHORIZATION [dbo]')
 END
-
 -- Drop foreign key constraints before dropping the Utilizador table
 IF OBJECT_ID('Li4.fk_Utilizador_Morada', 'F') IS NOT NULL
     ALTER TABLE Li4.Utilizador DROP CONSTRAINT fk_Utilizador_Morada;
@@ -100,11 +99,12 @@ CREATE TABLE Li4.leilao (
 
 -- Table licitacao
 CREATE TABLE Li4.licitacao (
+    idLicitacao INT IDENTITY(1,1) NOT NULL,
     utilizador_email VARCHAR(100) NOT NULL,
     leilao_idLeilao INT NOT NULL,
     data DATETIME NOT NULL,
-    valor DECIMAL(7,2) NOT NULL,
-    PRIMARY KEY (utilizador_email, leilao_idLeilao),
+    valor DECIMAL(12,2) NOT NULL,
+    PRIMARY KEY (idLicitacao),
     FOREIGN KEY (utilizador_email) REFERENCES Li4.Utilizador(email),
     FOREIGN KEY (leilao_idLeilao) REFERENCES Li4.leilao(idLeilao)
 );

@@ -145,3 +145,4 @@ C:\Users\gmari\Desktop\LI4\leiloes_monet\leiloes_monet\obj\Debug\net8.0\leiloes_
 C:\Users\gmari\Desktop\LI4\leiloes_monet\leiloes_monet\obj\Debug\net8.0\leiloes_monet.genruntimeconfig.cache
 C:\Users\gmari\Desktop\LI4\leiloes_monet\leiloes_monet\obj\Debug\net8.0\ref\leiloes_monet.dll
 C:\Users\gmari\Desktop\LI4\leiloes_monet\leiloes_monet\obj\Debug\net8.0\leiloes_monet.csproj.ResolveComReference.cache
+C:\Users\henri\Desktop\LI4\leiloes_monet\leiloes_monet\obj\Debug\net8.0\leiloes_monet.csproj.ResolveComReference.cache

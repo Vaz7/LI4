@@ -1,415 +1,411 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\leiloes_monet.bundle.scp.css",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\leiloes_monet.bundle.scp.css",
       "PackagePath": "staticwebassets\\leiloes_monet.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\css\\botoesAdd.css",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\css\\botoesAdd.css",
       "PackagePath": "staticwebassets\\css\\botoesAdd.css"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\css\\formStyle.css",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\css\\formStyle.css",
       "PackagePath": "staticwebassets\\css\\formStyle.css"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\css\\homepage.css",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\css\\formStyle2.css",
+      "PackagePath": "staticwebassets\\css\\formStyle2.css"
+    },
+    {
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\css\\homepage.css",
       "PackagePath": "staticwebassets\\css\\homepage.css"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\css\\loginStyle.css",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\css\\loginStyle.css",
       "PackagePath": "staticwebassets\\css\\loginStyle.css"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\css\\montserrat-font.css",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\css\\menuleiloes.css",
+      "PackagePath": "staticwebassets\\css\\menuleiloes.css"
+    },
+    {
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\css\\montserrat-font.css",
       "PackagePath": "staticwebassets\\css\\montserrat-font.css"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\Montserrat\\Montserrat-Black.ttf",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\Montserrat\\Montserrat-Black.ttf",
       "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-Black.ttf"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\Montserrat\\Montserrat-BlackItalic.ttf",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\Montserrat\\Montserrat-BlackItalic.ttf",
       "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-BlackItalic.ttf"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\Montserrat\\Montserrat-Bold.ttf",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\Montserrat\\Montserrat-Bold.ttf",
       "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-Bold.ttf"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\Montserrat\\Montserrat-BoldItalic.ttf",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\Montserrat\\Montserrat-BoldItalic.ttf",
       "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-BoldItalic.ttf"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\Montserrat\\Montserrat-ExtraBold.ttf",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\Montserrat\\Montserrat-ExtraBold.ttf",
       "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-ExtraBold.ttf"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\Montserrat\\Montserrat-ExtraBoldItalic.ttf",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\Montserrat\\Montserrat-ExtraBoldItalic.ttf",
       "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-ExtraBoldItalic.ttf"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\Montserrat\\Montserrat-ExtraLight.ttf",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\Montserrat\\Montserrat-ExtraLight.ttf",
       "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-ExtraLight.ttf"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\Montserrat\\Montserrat-ExtraLightItalic.ttf",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\Montserrat\\Montserrat-ExtraLightItalic.ttf",
       "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-ExtraLightItalic.ttf"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\Montserrat\\Montserrat-Italic.ttf",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\Montserrat\\Montserrat-Italic.ttf",
       "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-Italic.ttf"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\Montserrat\\Montserrat-Light.ttf",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\Montserrat\\Montserrat-Light.ttf",
       "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-Light.ttf"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\Montserrat\\Montserrat-LightItalic.ttf",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\Montserrat\\Montserrat-LightItalic.ttf",
       "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-LightItalic.ttf"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\Montserrat\\Montserrat-Medium.ttf",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\Montserrat\\Montserrat-Medium.ttf",
       "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-Medium.ttf"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\Montserrat\\Montserrat-MediumItalic.ttf",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\Montserrat\\Montserrat-MediumItalic.ttf",
       "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-MediumItalic.ttf"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\Montserrat\\Montserrat-Regular.ttf",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\Montserrat\\Montserrat-Regular.ttf",
       "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-Regular.ttf"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\Montserrat\\Montserrat-SemiBold.ttf",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\Montserrat\\Montserrat-SemiBold.ttf",
       "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-SemiBold.ttf"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\Montserrat\\Montserrat-SemiBoldItalic.ttf",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\Montserrat\\Montserrat-SemiBoldItalic.ttf",
       "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-SemiBoldItalic.ttf"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\Montserrat\\Montserrat-Thin.ttf",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\Montserrat\\Montserrat-Thin.ttf",
       "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-Thin.ttf"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\Montserrat\\Montserrat-ThinItalic.ttf",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\Montserrat\\Montserrat-ThinItalic.ttf",
       "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-ThinItalic.ttf"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\Montserrat\\OFL.txt",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\Montserrat\\OFL.txt",
       "PackagePath": "staticwebassets\\fonts\\Montserrat\\OFL.txt"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\material-design-iconic-font\\css\\material-design-iconic-font.css",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\material-design-iconic-font\\css\\material-design-iconic-font.css",
       "PackagePath": "staticwebassets\\fonts\\material-design-iconic-font\\css\\material-design-iconic-font.css"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\material-design-iconic-font\\css\\material-design-iconic-font.min.css",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\material-design-iconic-font\\css\\material-design-iconic-font.min.css",
       "PackagePath": "staticwebassets\\fonts\\material-design-iconic-font\\css\\material-design-iconic-font.min.css"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\material-design-iconic-font\\fonts\\Material-Design-Iconic-Font.eot",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\material-design-iconic-font\\fonts\\Material-Design-Iconic-Font.eot",
       "PackagePath": "staticwebassets\\fonts\\material-design-iconic-font\\fonts\\Material-Design-Iconic-Font.eot"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\material-design-iconic-font\\fonts\\Material-Design-Iconic-Font.svg",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\material-design-iconic-font\\fonts\\Material-Design-Iconic-Font.svg",
       "PackagePath": "staticwebassets\\fonts\\material-design-iconic-font\\fonts\\Material-Design-Iconic-Font.svg"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\material-design-iconic-font\\fonts\\Material-Design-Iconic-Font.ttf",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\material-design-iconic-font\\fonts\\Material-Design-Iconic-Font.ttf",
       "PackagePath": "staticwebassets\\fonts\\material-design-iconic-font\\fonts\\Material-Design-Iconic-Font.ttf"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\material-design-iconic-font\\fonts\\Material-Design-Iconic-Font.woff",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\material-design-iconic-font\\fonts\\Material-Design-Iconic-Font.woff",
       "PackagePath": "staticwebassets\\fonts\\material-design-iconic-font\\fonts\\Material-Design-Iconic-Font.woff"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\material-design-iconic-font\\fonts\\Material-Design-Iconic-Font.woff2",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\fonts\\material-design-iconic-font\\fonts\\Material-Design-Iconic-Font.woff2",
       "PackagePath": "staticwebassets\\fonts\\material-design-iconic-font\\fonts\\Material-Design-Iconic-Font.woff2"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\imagem\\0fe228b3-7e05-4930-a43b-154d252d4acd_Microsoft.AspNetCore.Http.FormFile",
-      "PackagePath": "staticwebassets\\imagem\\0fe228b3-7e05-4930-a43b-154d252d4acd_Microsoft.AspNetCore.Http.FormFile"
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\imagem\\0a02da0d-ab03-4045-9252-cd277dc08cc3_received_768507593488517.jpeg",
+      "PackagePath": "staticwebassets\\imagem\\0a02da0d-ab03-4045-9252-cd277dc08cc3_received_768507593488517.jpeg"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\imagem\\4e6bea4f-2833-4a1a-9698-3b8760da5b17_Microsoft.AspNetCore.Http.FormFile",
-      "PackagePath": "staticwebassets\\imagem\\4e6bea4f-2833-4a1a-9698-3b8760da5b17_Microsoft.AspNetCore.Http.FormFile"
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\imagem\\37e465ee-66a0-4896-af9c-876a09c406d4_received_768507593488517.jpeg",
+      "PackagePath": "staticwebassets\\imagem\\37e465ee-66a0-4896-af9c-876a09c406d4_received_768507593488517.jpeg"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\imagem\\5151f5e4-9ac1-4b6e-824b-dcf0e2aa66e3_Microsoft.AspNetCore.Http.FormFile",
-      "PackagePath": "staticwebassets\\imagem\\5151f5e4-9ac1-4b6e-824b-dcf0e2aa66e3_Microsoft.AspNetCore.Http.FormFile"
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\imagem\\b88088f4-973c-4bea-b0c1-259a05b73570_IMG_20180718_181753.jpg",
+      "PackagePath": "staticwebassets\\imagem\\b88088f4-973c-4bea-b0c1-259a05b73570_IMG_20180718_181753.jpg"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\imagem\\8452b16d-fba4-4cb1-ad51-d7ac2be83958_Microsoft.AspNetCore.Http.FormFile",
-      "PackagePath": "staticwebassets\\imagem\\8452b16d-fba4-4cb1-ad51-d7ac2be83958_Microsoft.AspNetCore.Http.FormFile"
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\imagem\\c91d65d2-1250-4ca5-9b6d-f50d4f8ca23a_IMG_20180916_183145.jpg",
+      "PackagePath": "staticwebassets\\imagem\\c91d65d2-1250-4ca5-9b6d-f50d4f8ca23a_IMG_20180916_183145.jpg"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\imagem\\9afdda02-ad35-4add-b012-86620b24ee81_Microsoft.AspNetCore.Http.FormFile",
-      "PackagePath": "staticwebassets\\imagem\\9afdda02-ad35-4add-b012-86620b24ee81_Microsoft.AspNetCore.Http.FormFile"
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\imagem\\d9cdcd3b-712a-4c00-8dc5-3f636339e2fd_IMG_20190325_203826.jpg",
+      "PackagePath": "staticwebassets\\imagem\\d9cdcd3b-712a-4c00-8dc5-3f636339e2fd_IMG_20190325_203826.jpg"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\imagem\\a40105b0-32b0-434d-9cc4-202577e75e67_Microsoft.AspNetCore.Http.FormFile",
-      "PackagePath": "staticwebassets\\imagem\\a40105b0-32b0-434d-9cc4-202577e75e67_Microsoft.AspNetCore.Http.FormFile"
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\imagem\\fa61e547-ae3e-42ec-97c4-496e9c137010_IMG_20180916_183150.jpg",
+      "PackagePath": "staticwebassets\\imagem\\fa61e547-ae3e-42ec-97c4-496e9c137010_IMG_20180916_183150.jpg"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\imagem\\a64d97e5-a6f9-4074-a9b5-fd6999b732df_Microsoft.AspNetCore.Http.FormFile",
-      "PackagePath": "staticwebassets\\imagem\\a64d97e5-a6f9-4074-a9b5-fd6999b732df_Microsoft.AspNetCore.Http.FormFile"
-    },
-    {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\imagem\\a6ba2408-f2dd-447e-bff9-b29b64990238_Microsoft.AspNetCore.Http.FormFile",
-      "PackagePath": "staticwebassets\\imagem\\a6ba2408-f2dd-447e-bff9-b29b64990238_Microsoft.AspNetCore.Http.FormFile"
-    },
-    {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\imagem\\d92093cb-d930-4e6c-9aa5-08d4c5a5a07e_Microsoft.AspNetCore.Http.FormFile",
-      "PackagePath": "staticwebassets\\imagem\\d92093cb-d930-4e6c-9aa5-08d4c5a5a07e_Microsoft.AspNetCore.Http.FormFile"
-    },
-    {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\imagens\\bar.jpg",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\imagens\\bar.jpg",
       "PackagePath": "staticwebassets\\imagens\\bar.jpg"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\imagens\\grito.jpg",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\imagens\\grito.jpg",
       "PackagePath": "staticwebassets\\imagens\\grito.jpg"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\henri\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {

@@ -5,7 +5,6 @@ namespace leiloes_monet.Models
 {
     public class Quadro
     {
-        public int Id { get; set; }
         public string titulo { get; set; }
         public int ano { get; set; }
         public double altura { get; set; }

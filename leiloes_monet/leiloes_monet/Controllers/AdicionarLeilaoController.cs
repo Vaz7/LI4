@@ -18,11 +18,17 @@ namespace leiloes_monet.Controllers
             this.iuser = iuser;
         }
 
-
         public IActionResult addLeilao()
         {
-            return View();
-        }
+			if (HttpContext.Session.GetString("Autorizado") == "ok")
+			{
+				return View();
+			}
+			else
+			{
+				return RedirectToAction("Index", "Home");
+			}
+		}
 
         [HttpPost]
         public IActionResult addLeilao(Leilao leilao)
@@ -32,17 +38,18 @@ namespace leiloes_monet.Controllers
                 Utilizador user = iuser.getUser(HttpContext.Session.GetString("email"));
 
 
-                string fileName = caminhoServidor + "\\imagem\\";
-                string novoNomeParaImagem = Guid.NewGuid().ToString() + "_" + leilao.quadro.imagem.ImageFile;
+                string fileName ="/imagem/";
+                string filePath = caminhoServidor + "\\imagem\\";
+                string novoNomeParaImagem = Guid.NewGuid().ToString() + "_" + leilao.quadro.imagem.ImageFile.FileName;
 
-                if (!Directory.Exists(fileName))
+                if (!Directory.Exists(filePath))
                 {
-                    Directory.CreateDirectory(fileName);
+                    Directory.CreateDirectory(filePath);
                 }
 
-                using (var stream = System.IO.File.Create(fileName + novoNomeParaImagem))
+                using (var stream = System.IO.File.Create(filePath + novoNomeParaImagem))
                 {
-                    leilao.quadro.imagem.ImageFile.CopyToAsync(stream); // copia os dados para o arquivo
+                    leilao.quadro.imagem.ImageFile.CopyTo(stream); // copia os dados para o arquivo
                 }
                 leilao.quadro.imagem.NomeArquivo = fileName + novoNomeParaImagem;
                 leilao.utilizador = user;
@@ -50,14 +57,11 @@ namespace leiloes_monet.Controllers
                 leilao.data_fim = leilao.data_inicio.AddDays(7);
                 leilao.estado = false;
 
+                ileilao.addLeilao(leilao);
 
-                if (!ModelState.IsValid)
-                {
-                    ileilao.addLeilao(leilao);
-
-                    TempData["Criado"] = "Leilão Criado com Sucesso!";
-                    return RedirectToAction("Index", "HomeLogged");
-                }
+                TempData["Criado"] = "Leilão Criado com Sucesso!";
+                return RedirectToAction("Index", "HomeLogged");
+                
             }
             
             return View(leilao);

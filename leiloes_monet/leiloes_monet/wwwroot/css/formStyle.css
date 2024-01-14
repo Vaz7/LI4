@@ -439,3 +439,17 @@ body {
 		margin: 44px 0 30px;
 	}
 }
+
+.desc {
+	color: white;
+	background-color: purple;
+	border: 2px solid white; /* Add this line to set the border color */
+}
+	.desc::placeholder {
+		padding-left:10px;
+		color: white; /* Set the placeholder text color to white */
+	}
+
+.label{
+	color:white;
+}

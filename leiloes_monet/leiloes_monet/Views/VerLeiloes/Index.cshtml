@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/menuleiloes.css">
+    <link rel="stylesheet" href="../../css/homepage.css">
+        
+    <title>Leilao List</title>
+</head>
+<body>
+
+    <div class="container page-wrapper">
+        <div class="page-inner">
+            <div class="row horizontal-list">
+                @foreach (Leilao leilao in Model)
+                {
+                    <div class="el-wrapper">
+                        <div class="box-up">
+                            <img class="img" src="@Url.Content(leilao.quadro.imagem.NomeArquivo)" alt="">
+                            <div class="img-info">
+                                <div class="info-inner">
+                                    <span class="p-name">@leilao.nome</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box-down">
+                            <div class="h-bg">
+                                <div class="h-bg-inner"></div>
+                            </div>
+
+                            <a asp-controller="Leilao" asp-action="Index" asp-route-leilaoId="@leilao.idLeilao" class="cart">
+                                @if (leilao.licitacoes != null && leilao.licitacoes.Any())
+                                {
+                                    var lastLicitacao = leilao.licitacoes.OrderByDescending(l => l.valor).First();
+                                    <span class="price">@lastLicitacao.valor€</span>
+                                }
+                                else
+                                {
+                                    <span class="price">@leilao.valor_base€</span>
+                                }
+
+                                <span class="add-to-cart">
+                                    <span class="txt">Ver Leilão</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+    <a asp-controller="HomeLogged" asp-action="Index" class="website-title">Leilões Monet</a>
+    <div class="button-container">
+        <a asp-controller="MeuPerfil" asp-action="Meuperfil" class="quem-somos-button">Meu perfil</a>
+        <a asp-controller="HomeLogged" asp-action="Leiloes" class="quem-somos-button">Leiloes</a>
+        <a asp-controller="Home" asp-action="QuemSomos" class="quem-somos-button">Quem somos</a>
+        <a asp-controller="Home" asp-action="QuemSomos" class="quem-somos-button">Pagamentos</a>
+
+        <a asp-controller="HomeLogged" asp-action="Logout">Log out</a>
+    </div>
+</body>
+</html>

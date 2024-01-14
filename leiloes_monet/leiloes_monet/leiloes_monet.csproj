@@ -26,8 +26,6 @@
 
   <ItemGroup>
     <Folder Include="Imagem\" />
-    <Folder Include="Views\NewFolder\" />
-    <Folder Include="wwwroot\imagem\" />
     <Folder Include="wwwroot\NewFolder\" />
   </ItemGroup>
 

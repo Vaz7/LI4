@@ -6,8 +6,7 @@ namespace leiloes_monet.Models
 {
     public class Leilao
     {
-        public int Id { get; set; }
-       
+        public int idLeilao { get; set; }
         public string nome { get; set; }
         public DateTime data_inicio { get; set; }
         public DateTime data_fim { get; set; }
@@ -15,5 +14,6 @@ namespace leiloes_monet.Models
         public double valor_base { get; set; }
         public Utilizador utilizador { get; set; }
         public Quadro quadro { get; set; }
+        public List<Licitacao>? licitacoes;//o ? quer dizer que pode ser null
     }
 }
