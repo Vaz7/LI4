@@ -51,6 +51,10 @@ namespace leiloes_monet.Controllers
                 {
                     leilao.quadro.imagem.ImageFile.CopyTo(stream); // copia os dados para o arquivo
                 }
+
+
+
+
                 leilao.quadro.imagem.NomeArquivo = fileName + novoNomeParaImagem;
                 leilao.utilizador = user;
                 leilao.data_inicio = DateTime.Now;

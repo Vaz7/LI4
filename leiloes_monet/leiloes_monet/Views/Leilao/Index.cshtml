@@ -46,12 +46,14 @@
 
 					<div class="form-row">
 						<label class="label2" for="">Data de fim:</label>
-						<input type="text" class="input-text" placeholder="Titulo" asp-for="data_fim" required readonly>
-						
+						<input type="text" class="input-text" placeholder="Data de Fim" asp-for="data_fim" required readonly>
 					</div>
 
 					<div class="form-row">
-						<input type="text" class="input-text" placeholder="Licitação (em €)" name="licitacao" required>
+						@{
+							bool isAuctionActive = Model.data_fim >= DateTime.Now && !Model.estado;
+						}
+						<input type="text" class="input-text" placeholder="Licitação (em €)" name="licitacao" required @(isAuctionActive ? "" : "disabled")>
 					</div>
 					
 					<div class="el-wrapper">

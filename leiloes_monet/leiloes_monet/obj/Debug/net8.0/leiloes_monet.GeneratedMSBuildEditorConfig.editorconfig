@@ -9,71 +9,71 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = leiloes_monet
 build_property.RootNamespace = leiloes_monet
-build_property.ProjectDir = C:\Users\henri\Desktop\LI4\leiloes_monet\leiloes_monet\
+build_property.ProjectDir = C:\Users\gmari\Desktop\LI4\leiloes_monet\leiloes_monet\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\henri\Desktop\LI4\leiloes_monet\leiloes_monet
+build_property.MSBuildProjectDirectory = C:\Users\gmari\Desktop\LI4\leiloes_monet\leiloes_monet
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/henri/Desktop/LI4/leiloes_monet/leiloes_monet/Views/AdicionarLeilao/addLeilao.cshtml]
+[C:/Users/gmari/Desktop/LI4/leiloes_monet/leiloes_monet/Views/AdicionarLeilao/addLeilao.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRpY2lvbmFyTGVpbGFvXGFkZExlaWxhby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/henri/Desktop/LI4/leiloes_monet/leiloes_monet/Views/HomeLogged/Index.cshtml]
+[C:/Users/gmari/Desktop/LI4/leiloes_monet/leiloes_monet/Views/HomeLogged/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZUxvZ2dlZFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/henri/Desktop/LI4/leiloes_monet/leiloes_monet/Views/Home/Index.cshtml]
+[C:/Users/gmari/Desktop/LI4/leiloes_monet/leiloes_monet/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/henri/Desktop/LI4/leiloes_monet/leiloes_monet/Views/Home/QuemSomos.cshtml]
+[C:/Users/gmari/Desktop/LI4/leiloes_monet/leiloes_monet/Views/Home/QuemSomos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxRdWVtU29tb3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/henri/Desktop/LI4/leiloes_monet/leiloes_monet/Views/Leilao/Index.cshtml]
+[C:/Users/gmari/Desktop/LI4/leiloes_monet/leiloes_monet/Views/Leilao/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVpbGFvXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/henri/Desktop/LI4/leiloes_monet/leiloes_monet/Views/LogIn/Login.cshtml]
+[C:/Users/gmari/Desktop/LI4/leiloes_monet/leiloes_monet/Views/LogIn/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9nSW5cTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/henri/Desktop/LI4/leiloes_monet/leiloes_monet/Views/MeuPerfil/Meuperfil.cshtml]
+[C:/Users/gmari/Desktop/LI4/leiloes_monet/leiloes_monet/Views/MeuPerfil/Meuperfil.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWV1UGVyZmlsXE1ldXBlcmZpbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/henri/Desktop/LI4/leiloes_monet/leiloes_monet/Views/Shared/Error.cshtml]
+[C:/Users/gmari/Desktop/LI4/leiloes_monet/leiloes_monet/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/henri/Desktop/LI4/leiloes_monet/leiloes_monet/Views/Shared/_Notification.cshtml]
+[C:/Users/gmari/Desktop/LI4/leiloes_monet/leiloes_monet/Views/Shared/_Notification.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ob3RpZmljYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/henri/Desktop/LI4/leiloes_monet/leiloes_monet/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/gmari/Desktop/LI4/leiloes_monet/leiloes_monet/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/henri/Desktop/LI4/leiloes_monet/leiloes_monet/Views/SignUp/Create.cshtml]
+[C:/Users/gmari/Desktop/LI4/leiloes_monet/leiloes_monet/Views/SignUp/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2lnblVwXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/henri/Desktop/LI4/leiloes_monet/leiloes_monet/Views/VerLeiloes/Index.cshtml]
+[C:/Users/gmari/Desktop/LI4/leiloes_monet/leiloes_monet/Views/VerLeiloes/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVyTGVpbG9lc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/henri/Desktop/LI4/leiloes_monet/leiloes_monet/Views/_ViewImports.cshtml]
+[C:/Users/gmari/Desktop/LI4/leiloes_monet/leiloes_monet/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/henri/Desktop/LI4/leiloes_monet/leiloes_monet/Views/_ViewStart.cshtml]
+[C:/Users/gmari/Desktop/LI4/leiloes_monet/leiloes_monet/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/henri/Desktop/LI4/leiloes_monet/leiloes_monet/Views/Shared/_Layout.cshtml]
+[C:/Users/gmari/Desktop/LI4/leiloes_monet/leiloes_monet/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-iudkvp1r2l

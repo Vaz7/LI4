@@ -33,53 +33,61 @@ namespace leiloes_monet.Controllers
         {
 			if (HttpContext.Session.GetString("Autorizado") == "ok")
 			{
+				DateTime e = DateTime.Now;
 				Leilao l = ileilao.GetLeilaoById(leilaoId);
-				if (!l.licitacoes.IsNullOrEmpty())
+				if(l.data_fim >= e && !l.estado)
 				{
-					if (licitacao > l.licitacoes.Last().valor)
+					if (!l.licitacoes.IsNullOrEmpty())
 					{
-						Licitacao lic = new Licitacao()
+						if (licitacao > l.licitacoes.Last().valor)
 						{
-							data = DateTime.Now,
-							valor = licitacao,
-							idLeilao = leilaoId,
-							emailUtilizador = HttpContext.Session.GetString("email")
-						};
-						ileilao.addLicitacao(lic);
-						l.licitacoes.Add(lic);
-						TempData["Licitado"] = "Licitação registada!";
-						return View("Index",l);
+							Licitacao lic = new Licitacao()
+							{
+								data = e,
+								valor = licitacao,
+								idLeilao = leilaoId,
+								emailUtilizador = HttpContext.Session.GetString("email")
+							};
+							ileilao.addLicitacao(lic);
+							l.licitacoes.Add(lic);
+							TempData["Licitado"] = "Licitação registada!";
+							return View("Index", l);
+						}
+						else
+						{
+							TempData["Licitadoinv"] = "Licitação inválida: Valor Inferior!";
+							return View("Index", l);
+						}
+
 					}
 					else
 					{
-						TempData["Licitadoinv"] = "Licitação inválida!";
-						return View("Index",l);
+						if (licitacao > l.valor_base)
+						{
+							Licitacao lic = new Licitacao()
+							{
+								data = e,
+								valor = licitacao,
+								idLeilao = leilaoId,
+								emailUtilizador = HttpContext.Session.GetString("email")
+							};
+							ileilao.addLicitacao(lic);
+							l.licitacoes.Add(lic);
+							TempData["Licitado"] = "Licitação registada!";
+							return View("Index", l);
+						}
+						else
+						{
+							TempData["Licitadoinv"] = "Licitação inválida: Valor Inferior!";
+							return View("Index", l);
+						}
+
 					}
-					
 				}
 				else
 				{
-					if (licitacao > l.valor_base)
-					{
-						Licitacao lic = new Licitacao()
-						{
-							data = DateTime.Now,
-							valor = licitacao,
-							idLeilao = leilaoId,
-							emailUtilizador = HttpContext.Session.GetString("email")
-						};
-						ileilao.addLicitacao(lic);
-						l.licitacoes.Add(lic);
-						TempData["Licitado"] = "Licitação registada!";
-						return View("Index", l);
-					}
-					else
-					{
-						TempData["Licitadoinv"] = "Licitação inválida!";
-						return View("Index", l);
-					}
-
-
+					TempData["Licitadoinv"] = "Licitação inválida: Leilão Terminado!";
+					return View("Index", l);
 				}
 			}
 			else

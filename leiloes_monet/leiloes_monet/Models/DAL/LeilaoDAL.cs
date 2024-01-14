@@ -69,8 +69,22 @@ namespace leiloes_monet.Models.DAL
             {
                 con.Open();
 
-                // Query to get Leilao information
-                string leilaoQuery = @"
+				// First, update the estado field
+				string updateQuery = @"
+            UPDATE Li4.leilao
+            SET estado = CASE 
+                            WHEN data_fim < GETDATE() THEN 1
+                            ELSE 0
+                         END
+            WHERE data_fim > GETDATE() AND estado = 0";
+
+				using (SqlCommand updateCommand = new SqlCommand(updateQuery, con))
+				{
+					updateCommand.ExecuteNonQuery();
+				}
+
+				// Query to get Leilao information
+				string leilaoQuery = @"
             SELECT l.idLeilao, l.nome, l.data_inicio, l.data_fim, l.estado, l.valor_base,
                    l.Utilizador_email, q.idQuadro, q.titulo, q.ano, q.altura, q.largura, q.descricao,
                    q.moldura, q.autor, q.imagem
@@ -160,8 +174,22 @@ namespace leiloes_monet.Models.DAL
             {
                 con.Open();
 
-                // Query to get Leilao information
-                string leilaoQuery = @"
+				// First, update the estado field
+				string updateQuery = @"
+            UPDATE Li4.leilao
+            SET estado = CASE 
+                            WHEN data_fim < GETDATE() THEN 1
+                            ELSE 0
+                         END
+            WHERE data_fim > GETDATE() AND estado = 0";
+
+				using (SqlCommand updateCommand = new SqlCommand(updateQuery, con))
+				{
+					updateCommand.ExecuteNonQuery();
+				}
+
+				// Query to get Leilao information
+				string leilaoQuery = @"
             SELECT l.idLeilao, l.nome, l.data_inicio, l.data_fim, l.estado, l.valor_base,
                    l.Utilizador_email, q.idQuadro, q.titulo, q.ano, q.altura, q.largura, q.descricao,
                    q.moldura, q.autor, q.imagem
@@ -252,8 +280,22 @@ namespace leiloes_monet.Models.DAL
             {
                 connection.Open();
 
-                // Query to get distinct leilao_idLeilao values for a specific user
-                string query = "SELECT DISTINCT leilao_idLeilao FROM Li4.licitacao WHERE utilizador_email = @UtilizadorEmail";
+				// First, update the estado field
+				string updateQuery = @"
+            UPDATE Li4.leilao
+            SET estado = CASE 
+                            WHEN data_fim < GETDATE() THEN 1
+                            ELSE 0
+                         END
+            WHERE data_fim > GETDATE() AND estado = 0";
+
+				using (SqlCommand updateCommand = new SqlCommand(updateQuery, connection))
+				{
+					updateCommand.ExecuteNonQuery();
+				}
+
+				// Query to get distinct leilao_idLeilao values for a specific user
+				string query = "SELECT DISTINCT leilao_idLeilao FROM Li4.licitacao WHERE utilizador_email = @UtilizadorEmail";
 
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {

@@ -40,9 +40,11 @@
 					<h2>Quadro</h2>
 					<div class="form-row">
 						<input type="text" placeholder="Titulo" asp-for="quadro.titulo" required>
+						<span asp-validation-for="quadro.titulo" class="text-danger"></span>
 					</div>
 					<div class="form-row">
 						<input type="text" placeholder="Autor" asp-for="quadro.autor" required>
+						<span asp-validation-for="quadro.autor" class="text-danger"></span>
 					</div>
 					<div class="form-group">
 						<div class="form-row form-row-1">
@@ -76,6 +78,7 @@
 					<div class="form-row">
 						<label class="label" for="Imagem">Imagem:</label>
 						<input type="file" class="Imagem" placeholder="Imagem" asp-for="quadro.imagem.ImageFile" required accept=".png, .jpeg, .jpg">
+						<span asp-validation-for="quadro.imagem.ImageFile" class="text-danger"></span>
 					</div>
 					<div class="form-row-last">
 						<input type="submit" class="register" value="Criar Leilão">
