@@ -46,13 +46,14 @@ namespace leiloes_monet.Controllers
 							emailUtilizador = HttpContext.Session.GetString("email")
 						};
 						ileilao.addLicitacao(lic);
+						l.licitacoes.Add(lic);
 						TempData["Licitado"] = "Licitação registada!";
-						return View("Index");
+						return View("Index",l);
 					}
 					else
 					{
-						ModelState.AddModelError("licitacao", "Date is not valid.");
-						return View("Index");
+						TempData["Licitadoinv"] = "Licitação inválida!";
+						return View("Index",l);
 					}
 					
 				}
@@ -68,13 +69,14 @@ namespace leiloes_monet.Controllers
 							emailUtilizador = HttpContext.Session.GetString("email")
 						};
 						ileilao.addLicitacao(lic);
+						l.licitacoes.Add(lic);
 						TempData["Licitado"] = "Licitação registada!";
-						return View();
+						return View("Index", l);
 					}
 					else
 					{
-						ModelState.AddModelError("data_nascimento", "Date is not valid.");
-						return View();
+						TempData["Licitadoinv"] = "Licitação inválida!";
+						return View("Index", l);
 					}
 
 

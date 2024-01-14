@@ -33,14 +33,14 @@
 
 					<div class="form-row">
 						<label class="label2">Valor atual:</label>
-						@if (Model.licitacoes != null && Model.licitacoes.Any())
+						@if (Model!=null && Model.licitacoes != null && Model.licitacoes.Any())
 						{
 							double displayValue = Model.licitacoes.Max(l => l.valor);
 							<input type="text" step="0.01" value="@displayValue€" required min="0" readonly>
 						}
 						else
 						{
-							<input type="text" step="0.01" value="@Model.valor_base€" required min="0" readonly>
+							<input type="text" step="0.01" asp-for="valor_base" required min="0" readonly>
 						}
 					</div>
 
