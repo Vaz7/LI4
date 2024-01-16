@@ -76,7 +76,7 @@ CREATE TABLE Li4.Utilizador (
         REFERENCES Li4.Morada (idMorada)
         ON DELETE NO ACTION
         ON UPDATE NO ACTION
-);
+)
 
 -- Table Leilao
 CREATE TABLE Li4.leilao (
@@ -86,6 +86,7 @@ CREATE TABLE Li4.leilao (
     data_fim DATETIME NOT NULL,
     estado TINYINT NOT NULL,
     valor_base DECIMAL(7,2) NOT NULL,
+	pago TINYINT NOT NULL,
     Utilizador_email VARCHAR(100) NOT NULL,
     idQuadro INT NOT NULL,
     PRIMARY KEY (idLeilao),

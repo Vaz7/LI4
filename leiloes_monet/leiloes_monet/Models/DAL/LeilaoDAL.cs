@@ -461,19 +461,18 @@ namespace leiloes_monet.Models.DAL
 			using (SqlConnection con = new SqlConnection(connectionstring))
 			{
 				con.Open();
-
 				string query = @"
-            SELECT l.idLeilao, l.nome, l.data_inicio, l.data_fim, l.estado, l.valor_base, l.pago,
-               l.Utilizador_email
-            FROM Li4.leilao l
-            INNER JOIN Li4.licitacao lic ON l.idLeilao = lic.leilao_idLeilao
-            WHERE l.estado = 1 
-              AND l.pago = 0
-			  AND lic.Utilizador_email = @utilizadorEmail
-			  AND lic.valor = (SELECT MAX(valor) FROM Li4.licitacao WHERE leilao_idLeilao = l.idLeilao); ";
-		
+    SELECT l.idLeilao, l.nome, q.titulo, q.ano, q.altura, q.largura, q.descricao, q.moldura, q.autor,q.imagem, l.data_inicio, l.data_fim, l.estado, l.valor_base, l.pago,
+           l.Utilizador_email, lic.leilao_idLeilao, lic.data, lic.valor
+    FROM Li4.leilao l
+    INNER JOIN Li4.licitacao lic ON l.idLeilao = lic.leilao_idLeilao
+    INNER JOIN Li4.Quadro q ON l.idQuadro = q.idQuadro
+    WHERE l.estado = 1 
+      AND lic.Utilizador_email = @utilizadorEmail
+      AND lic.valor = (SELECT MAX(valor) FROM Li4.licitacao WHERE leilao_idLeilao = l.idLeilao); ";
 
-		using (SqlCommand cmd = new SqlCommand(query, con))
+
+				using (SqlCommand cmd = new SqlCommand(query, con))
 				{
 					cmd.Parameters.AddWithValue("@utilizadorEmail", utilizadorId);
 
@@ -505,14 +504,14 @@ namespace leiloes_monet.Models.DAL
                                 licitacoes = new List<Licitacao>()
                             };
 
-                            if (leilaoReader["idLicitacao"] != DBNull.Value)
+                            if (leilaoReader["leilao_idLeilao"] != DBNull.Value)
                             {
                                 Licitacao licitacao = new Licitacao
                                 {
-                                    emailUtilizador = leilaoReader["licitacao_utilizador_email"].ToString(),
+                                    emailUtilizador = leilaoReader["utilizador_email"].ToString(),
                                     idLeilao = Convert.ToInt32(leilaoReader["leilao_idLeilao"]),
-                                    data = Convert.ToDateTime(leilaoReader["licitacao_data"]),
-                                    valor = Convert.ToDouble(leilaoReader["licitacao_valor"])
+                                    data = Convert.ToDateTime(leilaoReader["data"]),
+                                    valor = Convert.ToDouble(leilaoReader["valor"])
                                 };
 
                                 leilao.licitacoes.Add(licitacao);

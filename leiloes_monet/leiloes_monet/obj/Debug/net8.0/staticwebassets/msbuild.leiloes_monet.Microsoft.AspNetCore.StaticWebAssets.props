@@ -672,6 +672,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\imagem\410ad0f8-e7a6-413e-9c56-92f02972d0a6_pc3.jpg))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\imagem\5c70331e-fa7d-4d15-b864-e63063dccfce_IMG_20180825_102934.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>leiloes_monet</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/leiloes_monet</BasePath>
+      <RelativePath>imagem/5c70331e-fa7d-4d15-b864-e63063dccfce_IMG_20180825_102934.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\imagem\5c70331e-fa7d-4d15-b864-e63063dccfce_IMG_20180825_102934.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\imagem\8592d5da-1f15-415a-9def-3270f6e0ec1a_ohno.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>leiloes_monet</SourceId>
