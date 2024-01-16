@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Data.SqlClient;
+using static System.Runtime.InteropServices.JavaScript.JSType;
+using System.Drawing;
 
 namespace leiloes_monet.Models.DAL
 {
@@ -38,8 +40,8 @@ namespace leiloes_monet.Models.DAL
                 }
 
                 string leilaoQuery = @"
-                    INSERT INTO Li4.leilao (nome, data_inicio, data_fim, estado, valor_base, Utilizador_email, idQuadro)
-                    VALUES (@nome, @dataInicio, @dataFim, @estado, @valorBase, @utilizadorEmail, @idQuadro);
+                    INSERT INTO Li4.leilao (nome, data_inicio, data_fim, estado, valor_base, pago, Utilizador_email, idQuadro)
+                    VALUES (@nome, @dataInicio, @dataFim, @estado, @valorBase, @pago, @utilizadorEmail, @idQuadro);
 
                     SELECT SCOPE_IDENTITY() AS idLeilao;";
 
@@ -51,7 +53,8 @@ namespace leiloes_monet.Models.DAL
                     leilaoCmd.Parameters.AddWithValue("@dataFim", leilao.data_fim);
                     leilaoCmd.Parameters.AddWithValue("@estado", leilao.estado);
                     leilaoCmd.Parameters.AddWithValue("@valorBase", leilao.valor_base);
-                    leilaoCmd.Parameters.AddWithValue("@utilizadorEmail", leilao.utilizador.email);
+					leilaoCmd.Parameters.AddWithValue("@pago", leilao.pago);
+					leilaoCmd.Parameters.AddWithValue("@utilizadorEmail", leilao.utilizador.email);
                     leilaoCmd.Parameters.AddWithValue("@idQuadro", idQuadro);
 
                     leilaoCmd.ExecuteNonQuery();
@@ -85,7 +88,7 @@ namespace leiloes_monet.Models.DAL
 
 				// Query to get Leilao information
 				string leilaoQuery = @"
-            SELECT l.idLeilao, l.nome, l.data_inicio, l.data_fim, l.estado, l.valor_base,
+            SELECT l.idLeilao, l.nome, l.data_inicio, l.data_fim, l.estado, l.valor_base, l.pago,
                    l.Utilizador_email, q.idQuadro, q.titulo, q.ano, q.altura, q.largura, q.descricao,
                    q.moldura, q.autor, q.imagem
             FROM Li4.leilao l
@@ -105,7 +108,8 @@ namespace leiloes_monet.Models.DAL
                                 data_fim = Convert.ToDateTime(leilaoReader["data_fim"]),
                                 estado = Convert.ToBoolean(leilaoReader["estado"]),
                                 valor_base = Convert.ToDouble(leilaoReader["valor_base"]),
-                                utilizador = new Utilizador { email = leilaoReader["Utilizador_email"].ToString() },
+                                pago = Convert.ToBoolean(leilaoReader["pago"]),
+								utilizador = new Utilizador { email = leilaoReader["Utilizador_email"].ToString() },
                                 quadro = new Quadro
                                 {
                                     titulo = leilaoReader["titulo"].ToString(),
@@ -190,7 +194,7 @@ namespace leiloes_monet.Models.DAL
 
 				// Query to get Leilao information
 				string leilaoQuery = @"
-            SELECT l.idLeilao, l.nome, l.data_inicio, l.data_fim, l.estado, l.valor_base,
+            SELECT l.idLeilao, l.nome, l.data_inicio, l.data_fim, l.estado, l.valor_base, l.pago,
                    l.Utilizador_email, q.idQuadro, q.titulo, q.ano, q.altura, q.largura, q.descricao,
                    q.moldura, q.autor, q.imagem
             FROM Li4.leilao l
@@ -213,7 +217,8 @@ namespace leiloes_monet.Models.DAL
                                 data_fim = Convert.ToDateTime(leilaoReader["data_fim"]),
                                 estado = Convert.ToBoolean(leilaoReader["estado"]),
                                 valor_base = Convert.ToDouble(leilaoReader["valor_base"]),
-                                utilizador = new Utilizador { email = leilaoReader["Utilizador_email"].ToString() },
+								pago = Convert.ToBoolean(leilaoReader["pago"]),
+								utilizador = new Utilizador { email = leilaoReader["Utilizador_email"].ToString() },
                                 quadro = new Quadro
                                 {
                                     titulo = leilaoReader["titulo"].ToString(),
@@ -329,7 +334,7 @@ namespace leiloes_monet.Models.DAL
 
                 // Query to get Leilao information by ID
                 string leilaoQuery = @"
-        SELECT l.idLeilao, l.nome, l.data_inicio, l.data_fim, l.estado, l.valor_base,
+        SELECT l.idLeilao, l.nome, l.data_inicio, l.data_fim, l.estado, l.valor_base, l.pago,
                l.Utilizador_email, q.idQuadro, q.titulo, q.ano, q.altura, q.largura, q.descricao,
                q.moldura, q.autor, q.imagem, li.idLicitacao, li.utilizador_email AS licitacao_utilizador_email,
                li.leilao_idLeilao, li.data AS licitacao_data, li.valor AS licitacao_valor
@@ -358,7 +363,8 @@ namespace leiloes_monet.Models.DAL
                                     data_fim = Convert.ToDateTime(leilaoReader["data_fim"]),
                                     estado = Convert.ToBoolean(leilaoReader["estado"]),
                                     valor_base= Convert.ToDouble(leilaoReader["valor_base"]),
-                                    utilizador = new Utilizador { email = leilaoReader["Utilizador_email"].ToString() },
+									pago = Convert.ToBoolean(leilaoReader["pago"]),
+									utilizador = new Utilizador { email = leilaoReader["Utilizador_email"].ToString() },
                                     quadro = new Quadro
                                     {
                                         titulo = leilaoReader["titulo"].ToString(),
@@ -424,6 +430,105 @@ namespace leiloes_monet.Models.DAL
 				}
 			}
 		}
+
+
+        public void UpdateLeilaoPago(int idLeilao)
+        {
+            using (SqlConnection con = new SqlConnection(connectionstring))
+            {
+                con.Open();
+
+                string updateLeilaoQuery = @"
+            UPDATE Li4.leilao
+            SET pago = 1
+                    WHERE idLeilao = @idLeilao; ";
+        
+        using (SqlCommand updateLeilaoCmd = new SqlCommand(updateLeilaoQuery, con))
+                {
+                    updateLeilaoCmd.Parameters.AddWithValue("@idLeilao", idLeilao);
+                    updateLeilaoCmd.ExecuteNonQuery();
+                }
+
+                con.Close();
+            }
+        }
+
+
+		public List<Leilao> getLeiloesGanhosNaoPagos(string utilizadorId)
+		{
+			List<Leilao> activeLeiloes = new List<Leilao>();
+
+			using (SqlConnection con = new SqlConnection(connectionstring))
+			{
+				con.Open();
+
+				string query = @"
+            SELECT l.idLeilao, l.nome, l.data_inicio, l.data_fim, l.estado, l.valor_base, l.pago,
+               l.Utilizador_email
+            FROM Li4.leilao l
+            INNER JOIN Li4.licitacao lic ON l.idLeilao = lic.leilao_idLeilao
+            WHERE l.estado = 1 
+              AND l.pago = 0
+			  AND lic.Utilizador_email = @utilizadorEmail
+			  AND lic.valor = (SELECT MAX(valor) FROM Li4.licitacao WHERE leilao_idLeilao = l.idLeilao); ";
+		
+
+		using (SqlCommand cmd = new SqlCommand(query, con))
+				{
+					cmd.Parameters.AddWithValue("@utilizadorEmail", utilizadorId);
+
+					using (SqlDataReader leilaoReader = cmd.ExecuteReader())
+					{
+						while (leilaoReader.Read())
+						{
+                            Leilao leilao = new Leilao
+                            {
+                                idLeilao = Convert.ToInt32(leilaoReader["idLeilao"]),
+                                nome = leilaoReader["nome"].ToString(),
+                                data_inicio = Convert.ToDateTime(leilaoReader["data_inicio"]),
+                                data_fim = Convert.ToDateTime(leilaoReader["data_fim"]),
+                                estado = Convert.ToBoolean(leilaoReader["estado"]),
+                                valor_base = Convert.ToDouble(leilaoReader["valor_base"]),
+                                pago = Convert.ToBoolean(leilaoReader["pago"]),
+                                utilizador = new Utilizador { email = leilaoReader["Utilizador_email"].ToString() },
+                                quadro = new Quadro
+                                {
+                                    titulo = leilaoReader["titulo"].ToString(),
+                                    ano = Convert.ToInt32(leilaoReader["ano"]),
+                                    altura = Convert.ToDouble(leilaoReader["altura"]),
+                                    largura = Convert.ToDouble(leilaoReader["largura"]),
+                                    descricao = leilaoReader["descricao"].ToString(),
+                                    moldura = Convert.ToBoolean(leilaoReader["moldura"]),
+                                    autor = leilaoReader["autor"].ToString(),
+                                    imagem = new Imagem { NomeArquivo = leilaoReader["imagem"].ToString() }
+                                },
+                                licitacoes = new List<Licitacao>()
+                            };
+
+                            if (leilaoReader["idLicitacao"] != DBNull.Value)
+                            {
+                                Licitacao licitacao = new Licitacao
+                                {
+                                    emailUtilizador = leilaoReader["licitacao_utilizador_email"].ToString(),
+                                    idLeilao = Convert.ToInt32(leilaoReader["leilao_idLeilao"]),
+                                    data = Convert.ToDateTime(leilaoReader["licitacao_data"]),
+                                    valor = Convert.ToDouble(leilaoReader["licitacao_valor"])
+                                };
+
+                                leilao.licitacoes.Add(licitacao);
+                            }
+
+                            activeLeiloes.Add(leilao);
+						}
+					}
+				}
+
+				con.Close();
+			}
+
+			return activeLeiloes;
+		}
+
 
 
 

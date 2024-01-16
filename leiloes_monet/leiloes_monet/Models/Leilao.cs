@@ -14,6 +14,7 @@ namespace leiloes_monet.Models
         public bool estado { get; set; }
 		[Required(ErrorMessage = "Valor base é obrigatório")]
 		public double valor_base { get; set; }
+        public bool pago { get; set; }
         public Utilizador utilizador { get; set; }
         public Quadro quadro { get; set; }
         public List<Licitacao>? licitacoes;//o ? quer dizer que pode ser null

@@ -8,5 +8,8 @@
         public List<Leilao> getAllLicitados(String email);
         public Leilao GetLeilaoById(int leilaoId);
         public bool addLicitacao(Licitacao l);
-    }
+        public void UpdateLeilaoPago(int idLeilao);
+        public List<Leilao> getLeiloesGanhosNaoPagos(string utilizadorId);
+
+	}
 }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "GbNJmKzvNALVQrBEgLaO2rPNdLkFDTCDD7jcqMx47IM=",
+  "Hash": "h7Z+08eGffzz2tkYy37T2XMRwgzDnhblc7DrvoqWU68=",
   "Source": "leiloes_monet",
   "BasePath": "_content/leiloes_monet",
   "Mode": "Default",
@@ -758,6 +758,25 @@
       "OriginalItemSpec": "wwwroot\\imagem\\0a02da0d-ab03-4045-9252-cd277dc08cc3_received_768507593488517.jpeg"
     },
     {
+      "Identity": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\imagem\\10f5307d-aaf3-4ecd-9fde-2935e68b4c64_Capturar.PNG",
+      "SourceId": "leiloes_monet",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\",
+      "BasePath": "_content/leiloes_monet",
+      "RelativePath": "imagem/10f5307d-aaf3-4ecd-9fde-2935e68b4c64_Capturar.PNG",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagem\\10f5307d-aaf3-4ecd-9fde-2935e68b4c64_Capturar.PNG"
+    },
+    {
       "Identity": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\imagem\\2146e80f-33b4-4272-8edc-1ef650e31762_pc3.jpg",
       "SourceId": "leiloes_monet",
       "SourceType": "Discovered",
@@ -813,6 +832,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imagem\\37e465ee-66a0-4896-af9c-876a09c406d4_received_768507593488517.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\imagem\\410ad0f8-e7a6-413e-9c56-92f02972d0a6_pc3.jpg",
+      "SourceId": "leiloes_monet",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\",
+      "BasePath": "_content/leiloes_monet",
+      "RelativePath": "imagem/410ad0f8-e7a6-413e-9c56-92f02972d0a6_pc3.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagem\\410ad0f8-e7a6-413e-9c56-92f02972d0a6_pc3.jpg"
     },
     {
       "Identity": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\imagem\\8592d5da-1f15-415a-9def-3270f6e0ec1a_ohno.jpg",
@@ -908,6 +946,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imagem\\fa61e547-ae3e-42ec-97c4-496e9c137010_IMG_20180916_183150.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\imagem\\fe89c203-e75c-4077-bb42-1aca1b67af24_pc3.jpg",
+      "SourceId": "leiloes_monet",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\",
+      "BasePath": "_content/leiloes_monet",
+      "RelativePath": "imagem/fe89c203-e75c-4077-bb42-1aca1b67af24_pc3.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagem\\fe89c203-e75c-4077-bb42-1aca1b67af24_pc3.jpg"
     },
     {
       "Identity": "C:\\Users\\gmari\\Desktop\\LI4\\leiloes_monet\\leiloes_monet\\wwwroot\\imagens\\bar.jpg",

@@ -60,6 +60,7 @@ namespace leiloes_monet.Controllers
                 leilao.data_inicio = DateTime.Now;
                 leilao.data_fim = leilao.data_inicio.AddDays(7);
                 leilao.estado = false;
+                leilao.pago = false;
 
                 ileilao.addLeilao(leilao);
 
