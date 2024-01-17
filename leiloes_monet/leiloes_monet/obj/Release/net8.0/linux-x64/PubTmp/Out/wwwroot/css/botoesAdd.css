@@ -1,0 +1,16 @@
+﻿<style >
+.register {
+    background-color: #4CAF50; /* Cor de fundo verde */
+    color: white; /* Cor do texto branco */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor ao passar sobre o botão */
+    font-size: 16px; /* Tamanho da fonte */
+}
+
+.register:hover {
+    background-color: #45a049; /* Mudança de cor ao passar sobre o botão */
+}
+
+</style >

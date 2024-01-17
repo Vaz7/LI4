@@ -23,7 +23,7 @@
 				<div class="form-left">
 					<h2>Dados Leilão</h2>
 					<div class="form-row">
-						<input type="text" class="input-text" placeholder="Titulo" asp-for="nome" required>
+						<input type="text" class="input-text" placeholder="Titulo" asp-for="nome" minlength="1" maxlength="149" required>
 						<span asp-validation-for="nome" class="text-danger"></span>
 					</div>
 
@@ -39,7 +39,7 @@
 				<div class="form-right">
 					<h2>Quadro</h2>
 					<div class="form-row">
-						<input type="text" placeholder="Titulo" asp-for="quadro.titulo" required>
+						<input type="text" placeholder="Titulo" asp-for="quadro.titulo" minlength="1" maxlength="99" required>
 						<span asp-validation-for="quadro.titulo" class="text-danger"></span>
 					</div>
 					<div class="form-row">
@@ -53,17 +53,17 @@
 						</div>
 					</div>
 					<div class="form-row">
-						<input type="number" placeholder="Altura" asp-for="quadro.altura" required min="0">
+						<input type="number" placeholder="Altura(cm)" asp-for="quadro.altura" required min="0" max="99999.99" step="0.01">
 						<span asp-validation-for="quadro.altura" class="text-danger"></span>
 					</div>
 
 					<div class="form-row">
-						<input type="number" placeholder="Largura" asp-for="quadro.largura" required min="0">
+						<input type="number" placeholder="Largura(cm)" asp-for="quadro.largura" required min="0" max="99999.99" step="0.01">
 						<span asp-validation-for="quadro.largura" class="text-danger"></span>
 					</div>
 
 					<div class="form-row">
-						<textarea class="desc" placeholder="Descrição" asp-for="quadro.descricao" required style="width: 100%; height: 100px;"></textarea>
+						<textarea class="desc" placeholder="Descrição" asp-for="quadro.descricao" required style="width: 100%; height: 100px;" minlength="1" maxlength="999"></textarea>
 						<span asp-validation-for="quadro.descricao" class="text-danger"></span>
 					</div>
 
@@ -91,7 +91,7 @@
 	<a asp-controller="HomeLogged" asp-action="Index" class="website-title">Leilões Monet</a>
 	<div class="button-container">
 		<a asp-controller="MeuPerfil" asp-action="Meuperfil" class="quem-somos-button">Meu perfil</a>
-		<a asp-controller="HomeLogged" asp-action="Leiloes" class="quem-somos-button">Leiloes</a>
+		<a asp-controller="VerLeiloes" asp-action="Index" class="quem-somos-button">Leiloes</a>
 		<a asp-controller="Home" asp-action="QuemSomos" class="quem-somos-button">Quem somos</a>
 
 		<a asp-controller="HomeLogged" asp-action="Logout">Log out</a>

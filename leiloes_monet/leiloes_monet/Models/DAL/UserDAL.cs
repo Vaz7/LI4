@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Data.SqlClient;
+using System.Security.Cryptography;
+using System.Text;
 
 namespace leiloes_monet.Models.DAL
 {
@@ -29,7 +31,7 @@ namespace leiloes_monet.Models.DAL
                     moradaCmd.Parameters.AddWithValue("@Cidade", user.morada.cidade);
                     moradaCmd.Parameters.AddWithValue("@CodPostal", user.morada.cod_postal);
                     moradaCmd.Parameters.AddWithValue("@Pais", user.morada.pais);
-                    
+
 
                     // Execute the query and get the generated identity value
                     idMorada = Convert.ToInt32(moradaCmd.ExecuteScalar());
@@ -48,7 +50,8 @@ namespace leiloes_monet.Models.DAL
                     userCmd.Parameters.AddWithValue("@Nome", user.nome);
                     userCmd.Parameters.AddWithValue("@DataNascimento", user.data_nascimento);
                     userCmd.Parameters.AddWithValue("@NIF", user.nif);
-                    userCmd.Parameters.AddWithValue("@Password", user.password);
+                    string hashedPassword = HashPassword(user.password);
+                    userCmd.Parameters.AddWithValue("@Password", hashedPassword);
                     userCmd.Parameters.AddWithValue("@IdMorada", idMorada); // Use the retrieved idMorada
 
                     userCmd.ExecuteNonQuery();
@@ -88,7 +91,8 @@ namespace leiloes_monet.Models.DAL
                 using (SqlCommand cmd = new SqlCommand(query, con))
                 {
                     cmd.Parameters.AddWithValue("@Email", email);
-                    cmd.Parameters.AddWithValue("@Password", password);
+                    string hashedPassword = HashPassword(password);
+                    cmd.Parameters.AddWithValue("@Password", hashedPassword);
 
                     int count = (int)cmd.ExecuteScalar();
 
@@ -97,110 +101,123 @@ namespace leiloes_monet.Models.DAL
             }
         }
 
-		public Utilizador getUser(string email)
-		{
-			using (SqlConnection con = new SqlConnection(connectionstring))
-			{
-				con.Open();
+        public Utilizador getUser(string email)
+        {
+            using (SqlConnection con = new SqlConnection(connectionstring))
+            {
+                con.Open();
 
-				string query = @"SELECT u.email, u.nome, u.data_nascimento, u.NIF, u.password,
+                string query = @"SELECT u.email, u.nome, u.data_nascimento, u.NIF, u.password,
                         m.rua, m.cidade, m.cod_postal, m.pais
                         FROM [Li4].[Utilizador] u
                         INNER JOIN [Li4].[Morada] m ON u.idMorada = m.idMorada
                         WHERE u.email = @Email";
 
-				using (SqlCommand cmd = new SqlCommand(query, con))
-				{
-					cmd.Parameters.AddWithValue("@Email", email);
+                using (SqlCommand cmd = new SqlCommand(query, con))
+                {
+                    cmd.Parameters.AddWithValue("@Email", email);
 
-					using (SqlDataReader reader = cmd.ExecuteReader())
-					{
-						if (reader.Read())
-						{
-							// Create a Utilizador object and populate its properties
-							Utilizador user = new Utilizador
-							{
-								email = reader["email"].ToString(),
-								nome = reader["nome"].ToString(),
-								data_nascimento = (DateTime)reader["data_nascimento"],
-								nif = reader["NIF"].ToString(),
-								password = reader["password"].ToString(),
-								morada = new Morada
-								{
-									rua = reader["rua"].ToString(),
-									cidade = reader["cidade"].ToString(),
-									cod_postal = reader["cod_postal"].ToString(),
-									pais = reader["pais"].ToString()
-								}
-							};
-							return user;
-						}
-					}
-				}
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            // Create a Utilizador object and populate its properties
+                            Utilizador user = new Utilizador
+                            {
+                                email = reader["email"].ToString(),
+                                nome = reader["nome"].ToString(),
+                                data_nascimento = (DateTime)reader["data_nascimento"],
+                                nif = reader["NIF"].ToString(),
+                                password = reader["password"].ToString(),
+                                morada = new Morada
+                                {
+                                    rua = reader["rua"].ToString(),
+                                    cidade = reader["cidade"].ToString(),
+                                    cod_postal = reader["cod_postal"].ToString(),
+                                    pais = reader["pais"].ToString()
+                                }
+                            };
+                            return user;
+                        }
+                    }
+                }
 
-				return null; // Return null if the user with the given email is not found
-			}
-		}
+                return null; // Return null if the user with the given email is not found
+            }
+        }
 
-		public bool updateClient(Utilizador user)
-		{
-			using (SqlConnection con = new SqlConnection(connectionstring))
-			{
-				con.Open();
+        public bool updateClient(Utilizador user)
+        {
+            using (SqlConnection con = new SqlConnection(connectionstring))
+            {
+                con.Open();
 
-				// Fetch the idMorada from the Utilizador table
-				string getIdMoradaQuery = "SELECT idMorada FROM [Li4].[Utilizador] WHERE email = @Email";
+                // Fetch the idMorada from the Utilizador table
+                string getIdMoradaQuery = "SELECT idMorada FROM [Li4].[Utilizador] WHERE email = @Email";
 
-				int idMorada;
-				using (SqlCommand getIdMoradaCmd = new SqlCommand(getIdMoradaQuery, con))
-				{
-					getIdMoradaCmd.Parameters.AddWithValue("@Email", user.email);
-					idMorada = Convert.ToInt32(getIdMoradaCmd.ExecuteScalar());
-				}
+                int idMorada;
+                using (SqlCommand getIdMoradaCmd = new SqlCommand(getIdMoradaQuery, con))
+                {
+                    getIdMoradaCmd.Parameters.AddWithValue("@Email", user.email);
+                    idMorada = Convert.ToInt32(getIdMoradaCmd.ExecuteScalar());
+                }
 
-				// Step 1: Update Morada (address) in the database
-				string moradaQuery = @"UPDATE [Li4].[Morada]
+                // Step 1: Update Morada (address) in the database
+                string moradaQuery = @"UPDATE [Li4].[Morada]
                                SET [rua] = @Rua, [cidade] = @Cidade, [cod_postal] = @CodPostal, [pais] = @Pais
                                WHERE [idMorada] = @IdMorada;";
 
-				using (SqlCommand moradaCmd = new SqlCommand(moradaQuery, con))
-				{
-					// Set Morada parameters
-					moradaCmd.Parameters.AddWithValue("@IdMorada", idMorada); // Use the fetched idMorada
-					moradaCmd.Parameters.AddWithValue("@Rua", user.morada.rua);
-					moradaCmd.Parameters.AddWithValue("@Cidade", user.morada.cidade);
-					moradaCmd.Parameters.AddWithValue("@CodPostal", user.morada.cod_postal);
-					moradaCmd.Parameters.AddWithValue("@Pais", user.morada.pais);
+                using (SqlCommand moradaCmd = new SqlCommand(moradaQuery, con))
+                {
+                    // Set Morada parameters
+                    moradaCmd.Parameters.AddWithValue("@IdMorada", idMorada); // Use the fetched idMorada
+                    moradaCmd.Parameters.AddWithValue("@Rua", user.morada.rua);
+                    moradaCmd.Parameters.AddWithValue("@Cidade", user.morada.cidade);
+                    moradaCmd.Parameters.AddWithValue("@CodPostal", user.morada.cod_postal);
+                    moradaCmd.Parameters.AddWithValue("@Pais", user.morada.pais);
 
-					moradaCmd.ExecuteNonQuery();
-				}
+                    moradaCmd.ExecuteNonQuery();
+                }
 
-				// Step 2: Update Utilizador (user) in the database
-				string userQuery = @"UPDATE [Li4].[Utilizador]
+                // Step 2: Update Utilizador (user) in the database
+                string userQuery = @"UPDATE [Li4].[Utilizador]
                              SET [nome] = @Nome, [data_nascimento] = @DataNascimento, [NIF] = @NIF, [password] = @Password
                              WHERE [email] = @Email;";
 
-				using (SqlCommand userCmd = new SqlCommand(userQuery, con))
-				{
-					// Set Utilizador parameters
-					userCmd.Parameters.AddWithValue("@Email", user.email);
-					userCmd.Parameters.AddWithValue("@Nome", user.nome);
-					userCmd.Parameters.AddWithValue("@DataNascimento", user.data_nascimento);
-					userCmd.Parameters.AddWithValue("@NIF", user.nif);
-					userCmd.Parameters.AddWithValue("@Password", user.password);
+                using (SqlCommand userCmd = new SqlCommand(userQuery, con))
+                {
+                    // Set Utilizador parameters
+                    userCmd.Parameters.AddWithValue("@Email", user.email);
+                    userCmd.Parameters.AddWithValue("@Nome", user.nome);
+                    userCmd.Parameters.AddWithValue("@DataNascimento", user.data_nascimento);
+                    userCmd.Parameters.AddWithValue("@NIF", user.nif);
+                    string hashedPassword = HashPassword(user.password);
+                    userCmd.Parameters.AddWithValue("@Password", hashedPassword);
 
-					userCmd.ExecuteNonQuery();
-				}
+                    userCmd.ExecuteNonQuery();
+                }
 
-				con.Close();
-				return true; // Return true if the update is successful
-			}
-		}
+                con.Close();
+                return true; // Return true if the update is successful
+            }
+        }
 
+        private string HashPassword(string password)
+        {
+            using (SHA256 sha256 = SHA256Managed.Create())
+            {
+                byte[] hashedBytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(password));
 
+                // Convert the byte array to a hexadecimal string
+                StringBuilder stringBuilder = new StringBuilder();
+                for (int i = 0; i < hashedBytes.Length; i++)
+                {
+                    stringBuilder.Append(hashedBytes[i].ToString("x2"));
+                }
 
+                return stringBuilder.ToString();
 
-
-
-	}
+            }
+        }
+    }
 }

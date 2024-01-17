@@ -28,6 +28,7 @@
 
 					<div class="form-row">
 						<input type="text" placeholder="Username" asp-for="nome" required>
+						<span class="edit-icon">&#9998;</span>
 					</div>
 					<div class="form-row">
 						<input type="date" placeholder="Data nascimento" asp-for="data_nascimento" required readonly>
@@ -39,8 +40,9 @@
 						<span asp-validation-for="nif" class="text-danger"></span>
 					</div>
 					<div class="form-row">
-						<input type="password" class="password" placeholder="password" asp-for="password" minlength="8" maxlength="20" required>
+						<input type="password" class="password" placeholder="Password" asp-for="password" minlength="8" maxlength="20" required>
 						<span asp-validation-for="password" class="text-danger"></span>
+						<span class="edit-icon">&#9998;</span>
 					</div>
 
 				</div>
@@ -48,18 +50,22 @@
 					<h2>Morada</h2>
 					<div class="form-row">
 						<input type="text" placeholder="Cidade" asp-for="morada.cidade" required>
+						<span class="edit-icon">&#9998;</span>
 					</div>
 					<div class="form-group">
 						<div class="form-row">
 							<input type="text" placeholder="Código-postal (XXXX-XXX)" asp-for="morada.cod_postal" pattern="\d{4}-\d{3}" title="Código-postal deve estar no formato XXXX-XXX" required>
 							<span asp-validation-for="morada.cod_postal" class="text-danger"></span>
+							<span class="edit-icon">&#9998;</span>
 						</div>
 					</div>
 					<div class="form-row">
 						<input type="text" placeholder="Pais" asp-for="morada.pais" required>
+						<span class="edit-icon">&#9998;</span>
 					</div>
 					<div class="form-row">
 						<input type="text" placeholder="Rua" asp-for="morada.rua" required>
+						<span class="edit-icon">&#9998;</span>
 					</div>
 					<div class="form-row-last">
 						<input type="submit" class="register" value="Editar">

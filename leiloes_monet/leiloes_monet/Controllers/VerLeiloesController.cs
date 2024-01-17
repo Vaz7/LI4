@@ -21,7 +21,8 @@ namespace leiloes_monet.Controllers
 			{
 
 				List<Leilao> leiloes = ileilao.getAll();
-				return View(leiloes);
+                var sortedLeiloes = leiloes.OrderByDescending(leilao => leilao.data_inicio);
+                return View(sortedLeiloes);
 			}
 			else
 			{
@@ -37,7 +38,8 @@ namespace leiloes_monet.Controllers
             {
 
                 List<Leilao> leiloes = ileilao.getAllUser(HttpContext.Session.GetString("email"));
-				return View("Index", leiloes);
+                var sortedLeiloes = leiloes.OrderByDescending(leilao => leilao.data_inicio);
+                return View("Index", sortedLeiloes);
             }
             else
             {
@@ -53,7 +55,8 @@ namespace leiloes_monet.Controllers
             {
 
                 List<Leilao> leiloes = ileilao.getAllLicitados(HttpContext.Session.GetString("email"));
-                return View("Index", leiloes);
+                var sortedLeiloes = leiloes.OrderByDescending(leilao => leilao.data_inicio);
+                return View("Index", sortedLeiloes);
             }
             else
             {

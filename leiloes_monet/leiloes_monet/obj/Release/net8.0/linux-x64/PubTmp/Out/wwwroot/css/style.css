@@ -1,0 +1,21 @@
+body { background:#151515; }
+* { user-select: none; -webkit-user-select: none; }
+
+img, div {
+	position: absolute;
+}
+
+#imgBox {
+  cursor:none;
+  position:absolute;
+  left:50%;
+  margin-left:-400px;
+}
+
+.group {
+  left:0px;
+	top:0px;
+	width:800px;
+	height:1200px;
+	overflow: hidden;
+}

@@ -9,10 +9,10 @@ namespace leiloes_monet.Models
 		public string titulo { get; set; }
         public int ano { get; set; }
 		[Required(ErrorMessage = "Altura é obrigatória")]
-		[Range(0, double.MaxValue, ErrorMessage = "Altura inválida")]
+		[Range(0, 999.99, ErrorMessage = "Altura inválida")]
 		public double altura { get; set; }
 		[Required(ErrorMessage = "Largura é obrigatória")]
-		[Range(0, double.MaxValue, ErrorMessage = "Largura inválida")]
+		[Range(0, 999.99, ErrorMessage = "Largura inválida")]
 		public double largura { get; set; }
 		[Required(ErrorMessage = "Descrição é obrigatória")]
 		public string descricao { get; set; }
