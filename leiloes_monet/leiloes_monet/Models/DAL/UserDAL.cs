@@ -17,7 +17,7 @@ namespace leiloes_monet.Models.DAL
                 string moradaQuery = @"INSERT INTO [Li4].[Morada]
                                 ([rua], [cidade], [cod_postal],[pais])
                                 VALUES
-                                (@Rua, @Cidade, @Pais, @CodPostal);
+                                (@Rua, @Cidade, @CodPostal, @Pais);
                                 SELECT SCOPE_IDENTITY() As idMorada;"; // Retrieve the generated identity value
 
                 int idMorada;
@@ -27,8 +27,9 @@ namespace leiloes_monet.Models.DAL
                     // Set Morada parameters
                     moradaCmd.Parameters.AddWithValue("@Rua", user.morada.rua);
                     moradaCmd.Parameters.AddWithValue("@Cidade", user.morada.cidade);
-                    moradaCmd.Parameters.AddWithValue("@Pais", user.morada.pais);
                     moradaCmd.Parameters.AddWithValue("@CodPostal", user.morada.cod_postal);
+                    moradaCmd.Parameters.AddWithValue("@Pais", user.morada.pais);
+                    
 
                     // Execute the query and get the generated identity value
                     idMorada = Convert.ToInt32(moradaCmd.ExecuteScalar());

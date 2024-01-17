@@ -28,8 +28,8 @@
 					</div>
 
 					<div class="form-row">
-						<label for="valor_base"></label>
-						<input type="number" step="0.01" class="Valor" placeholder="Valor Base (em €)" asp-for="valor_base" required min="0">
+						<label for="valor_base">Valor Base (em €):</label>
+						<input type="text" class="Valor" placeholder="Valor Base (em €)" asp-for="valor_base" pattern="^\d{1,7}(\.\d{1,2})?$" title="Please enter a valid decimal with a maximum of 7 digits and 2 decimal places" required>
 						<span asp-validation-for="valor_base" class="text-danger"></span>
 					</div>
 
