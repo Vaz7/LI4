@@ -24,6 +24,8 @@ namespace leiloes_monet.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Create(Utilizador obj)
         {
+            DateTime currentDate = DateTime.Now;
+            DateTime objDataNascimento = obj.data_nascimento;
             if (EmailExists(obj.email))
             {
                 // Add a model error for the existing email
@@ -32,7 +34,10 @@ namespace leiloes_monet.Controllers
                 // Return the view with validation errors
                 return View(obj);
             }
-            if (!DateValid(obj.data_nascimento))
+            bool isAtLeast18Years = currentDate.Year - objDataNascimento.Year > 18 ||
+                               (currentDate.Year - objDataNascimento.Year == 18 && currentDate.Month > objDataNascimento.Month) ||
+                               (currentDate.Year - objDataNascimento.Year == 18 && currentDate.Month == objDataNascimento.Month && currentDate.Day >= objDataNascimento.Day);
+            if (!DateValid(obj.data_nascimento) || !isAtLeast18Years)
             {
                 // Add a model error for the existing email
                 ModelState.AddModelError("data_nascimento", "Date is not valid.");

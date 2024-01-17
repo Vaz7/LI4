@@ -282,3 +282,18 @@ body {
     max-width: 100%; /* Ensures the image won't exceed the container width */
     height: auto; /* Maintains the aspect ratio of the image */
 }
+
+.leilao-pago {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    color: #ff0000; /* Red color */
+    background-color: #ffffff; /* Button background color */
+    padding: 10px 20px; /* Adjust padding as needed */
+    border: 2px solid #ff0000; /* Border color */
+    border-radius: 5px; /* Border radius */
+    cursor: not-allowed; /* Disable cursor for the button */
+}

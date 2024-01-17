@@ -12,5 +12,13 @@ FROM Li4.leilao l
 INNER JOIN Li4.licitacao lic ON l.idLeilao = lic.leilao_idLeilao
 WHERE l.estado = 1 
   AND l.pago = 0
-  AND lic.Utilizador_email = 'b@b.b'
+  AND lic.Utilizador_email = 'asd@asd.asd'
   AND lic.valor = (SELECT MAX(valor) FROM Li4.licitacao WHERE leilao_idLeilao = l.idLeilao);
+
+
+UPDATE Li4.leilao
+SET estado = CASE 
+                WHEN data_fim < GETDATE() THEN 1
+                ELSE 0
+             END
+WHERE data_fim < GETDATE() AND estado = 0

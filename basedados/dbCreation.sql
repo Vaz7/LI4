@@ -1,3 +1,4 @@
+Use Li4
 -- Create the Li4 schema if it doesn't exist
 IF (SCHEMA_ID('Li4') IS NULL) 
 BEGIN

@@ -30,12 +30,18 @@
                                 <div class="h-bg-inner"></div>
                             </div>
 
-                            <form method="post" asp-controller="Pagamento" asp-action="PagarLeilao" class="payment-form">
-                                <input type="hidden" name="leilaoId" value="@leilao.idLeilao" />
-                                <button type="submit" class="add-to-cart">
-                                    <span class="txt">Pagar</span>
-                                </button>
-                            </form>
+                            @if (leilao.pago)
+                            {
+                                <span class="leilao-pago">Leilão Pago</span>
+                            }
+                            else
+                            {
+                                <a asp-controller="Pagamento" asp-action="PagarLeilao" asp-route-leilaoId="@leilao.idLeilao" class="cart">
+                                    <span class="add-to-cart">
+                                        <span class="txt">Pagar Leilão - Valor: @leilao.licitacoes[0].valor</span>
+                                    </span>
+                                </a>
+                            }
                         </div>
                     </div>
                 }
@@ -45,7 +51,7 @@
     <a asp-controller="HomeLogged" asp-action="Index" class="website-title">Leilões Monet</a>
     <div class="button-container">
         <a asp-controller="MeuPerfil" asp-action="Meuperfil" class="quem-somos-button">Meu perfil</a>
-        <a asp-controller="HomeLogged" asp-action="Leiloes" class="quem-somos-button">Leiloes</a>
+        <a asp-controller="VerLeiloes" asp-action="Index" class="quem-somos-button">Leiloes</a>
         <a asp-controller="Home" asp-action="QuemSomos" class="quem-somos-button">Quem somos</a>
         <a asp-controller="Pagamento" asp-action="Pagamento" class="quem-somos-button">Pagamentos</a>
 

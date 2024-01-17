@@ -79,7 +79,7 @@ namespace leiloes_monet.Models.DAL
                             WHEN data_fim < GETDATE() THEN 1
                             ELSE 0
                          END
-            WHERE data_fim > GETDATE() AND estado = 0";
+            WHERE data_fim < GETDATE() AND estado = 0";
 
 				using (SqlCommand updateCommand = new SqlCommand(updateQuery, con))
 				{
@@ -185,7 +185,7 @@ namespace leiloes_monet.Models.DAL
                             WHEN data_fim < GETDATE() THEN 1
                             ELSE 0
                          END
-            WHERE data_fim > GETDATE() AND estado = 0";
+            WHERE data_fim < GETDATE() AND estado = 0";
 
 				using (SqlCommand updateCommand = new SqlCommand(updateQuery, con))
 				{
@@ -292,7 +292,7 @@ namespace leiloes_monet.Models.DAL
                             WHEN data_fim < GETDATE() THEN 1
                             ELSE 0
                          END
-            WHERE data_fim > GETDATE() AND estado = 0";
+            WHERE data_fim < GETDATE() AND estado = 0";
 
 				using (SqlCommand updateCommand = new SqlCommand(updateQuery, connection))
 				{

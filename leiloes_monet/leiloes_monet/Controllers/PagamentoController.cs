@@ -23,7 +23,8 @@ namespace leiloes_monet.Controllers
 			{
 				Utilizador user = iuser.getUser(HttpContext.Session.GetString("email"));
 				List<Leilao> leiloes = ileilao.getLeiloesGanhosNaoPagos(user.email);
-                return View(leiloes);
+                var sortedLeiloes = leiloes.OrderBy(leilao => leilao.pago);
+                return View(sortedLeiloes);
 			}
 			else
 			{
@@ -39,7 +40,7 @@ namespace leiloes_monet.Controllers
                 leilao.pago = true;
                 ileilao.UpdateLeilaoPago(leilao.idLeilao);
                 TempData["Pago"] = "Pagamento Efetuado!";
-                return View();
+                return RedirectToAction("Pagamento", "Pagamento");
             }
             else
             {

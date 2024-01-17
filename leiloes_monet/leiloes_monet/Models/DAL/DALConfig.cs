@@ -3,7 +3,7 @@
     public class DALConfig
     {
 
-    public static string connectionstring = @"Data Source = VAZ; Initial Catalog = Li4; Integrated Security = True;";
+    public static string connectionstring = @"Data Source = DESKTOP-D00IN27; Initial Catalog = Li4; Integrated Security = True;";
       
     }
 }
