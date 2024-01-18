@@ -331,6 +331,19 @@ namespace leiloes_monet.Models.DAL
             using (SqlConnection con = new SqlConnection(connectionstring))
             {
                 con.Open();
+                // First, update the estado field
+                string updateQuery = @"
+            UPDATE Li4.leilao
+            SET estado = CASE 
+                            WHEN data_fim < GETDATE() THEN 1
+                            ELSE 0
+                         END
+            WHERE data_fim < GETDATE() AND estado = 0";
+
+                using (SqlCommand updateCommand = new SqlCommand(updateQuery, con))
+                {
+                    updateCommand.ExecuteNonQuery();
+                }
 
                 // Query to get Leilao information by ID
                 string leilaoQuery = @"
@@ -461,7 +474,20 @@ namespace leiloes_monet.Models.DAL
 			using (SqlConnection con = new SqlConnection(connectionstring))
 			{
 				con.Open();
-				string query = @"
+                // First, update the estado field
+                string updateQuery = @"
+            UPDATE Li4.leilao
+            SET estado = CASE 
+                            WHEN data_fim < GETDATE() THEN 1
+                            ELSE 0
+                         END
+            WHERE data_fim < GETDATE() AND estado = 0";
+
+                using (SqlCommand updateCommand = new SqlCommand(updateQuery, con))
+                {
+                    updateCommand.ExecuteNonQuery();
+                }
+                string query = @"
     SELECT l.idLeilao, l.nome, q.titulo, q.ano, q.altura, q.largura, q.descricao, q.moldura, q.autor,q.imagem, l.data_inicio, l.data_fim, l.estado, l.valor_base, l.pago,
            l.Utilizador_email, lic.leilao_idLeilao, lic.data, lic.valor
     FROM Li4.leilao l
