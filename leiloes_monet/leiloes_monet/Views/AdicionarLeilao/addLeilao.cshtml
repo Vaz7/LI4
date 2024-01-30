@@ -29,7 +29,7 @@
 
 					<div class="form-row">
 						<label for="valor_base">Valor Base (em €):</label>
-						<input type="text" class="Valor" placeholder="Valor Base (em €)" asp-for="valor_base" pattern="^\d{1,7}(\.\d{1,2})?$" title="Please enter a valid decimal with a maximum of 7 digits and 2 decimal places" required>
+						<input type="text" class="Valor" placeholder="Valor Base (em €)" asp-for="valor_base" oninput="validateInput(this)" required>
 						<span asp-validation-for="valor_base" class="text-danger"></span>
 					</div>
 
@@ -100,3 +100,17 @@
 
 </html>
 
+
+<script>
+	function validateInput(inputElement) {
+		const intValue = parseInt(inputElement.value, 10);
+
+		// Check if the parsed value is a valid integer and within the desired range
+		if (isNaN(intValue) || intValue !== parseFloat(inputElement.value) || intValue < 0 || intValue > 99999) {
+			inputElement.setCustomValidity('Value must be an integer between 0 and 99999');
+		} else {
+			// Set the input validity to pass
+			inputElement.setCustomValidity('');
+		}
+	}
+</script>

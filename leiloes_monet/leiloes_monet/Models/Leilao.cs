@@ -13,7 +13,7 @@ namespace leiloes_monet.Models
         public DateTime data_fim { get; set; }
         public bool estado { get; set; }
 		[Required(ErrorMessage = "Valor base é obrigatório")]
-        [Range(0, 9999999.99, ErrorMessage = "The valor field must be a valid decimal with a maximum of 7 digits and 2 decimal places.")]
+        [Range(0, 9999999999, ErrorMessage = "Value must be an integer between 0 and 9999999999")]
         public double valor_base { get; set; }
         public bool pago { get; set; }
         public Utilizador utilizador { get; set; }

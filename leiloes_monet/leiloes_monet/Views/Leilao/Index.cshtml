@@ -53,7 +53,8 @@
 						@{
 							bool isAuctionActive = Model.data_fim >= DateTime.Now && !Model.estado;
 						}
-						<input type="text" class="input-text" placeholder="Licitação (em €)" name="licitacao" required @(isAuctionActive ? "" : "disabled")>
+						<input type="text" class="input-text" placeholder="Licitação (em €)" name="licitacao" required
+							   oninput="validateInput(this)" @(isAuctionActive ? "" : "disabled")>
 					</div>
 					
 					<div class="el-wrapper">
@@ -115,3 +116,16 @@
 
 </html>
 
+<script>
+	function validateInput(inputElement) {
+		const intValue = parseInt(inputElement.value, 10);
+
+		// Check if the parsed value is a valid integer and within the desired range
+		if (isNaN(intValue) || intValue !== parseFloat(inputElement.value) || intValue < 0 || intValue > 9999999999) {
+			inputElement.setCustomValidity('Value must be an integer between 0 and 9999999999');
+		} else {
+			// Set the input validity to pass
+			inputElement.setCustomValidity('');
+		}
+	}
+</script>

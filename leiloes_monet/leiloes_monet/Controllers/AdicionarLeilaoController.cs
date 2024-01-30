@@ -58,7 +58,8 @@ namespace leiloes_monet.Controllers
                 leilao.quadro.imagem.NomeArquivo = fileName + novoNomeParaImagem;
                 leilao.utilizador = user;
                 leilao.data_inicio = DateTime.Now;
-                leilao.data_fim = leilao.data_inicio.AddMinutes(1);
+
+                leilao.data_fim = leilao.data_inicio.AddMinutes(2);
                 leilao.estado = false;
                 leilao.pago = false;
 
