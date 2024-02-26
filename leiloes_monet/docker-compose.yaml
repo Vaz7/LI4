@@ -1,0 +1,27 @@
+version: "3.8"
+services:
+  sqldb:
+    container_name: sql-server
+    image: mcr.microsoft.com/mssql/server:2022-preview-ubuntu-22.04
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=pw
+    volumes:
+      - data:/var/opt/mssql
+  leiloesserverapp:
+    container_name: dotnetserver
+    image: ${DOCKER_REGISTRY-}leiloesserverapp
+    build:
+      context: .
+      dockerfile: leiloes_monet/Dockerfile
+    ports:
+      - '8000:8080'
+    depends_on:
+      - sqldb
+    environment:
+      - DB_HOST=sqldb
+      - DB_NAME=dotnetserver
+      - DB_SA_PASSWORD=pw
+
+volumes:
+  data:
